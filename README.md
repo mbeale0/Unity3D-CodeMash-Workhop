@@ -22,3 +22,9 @@ Add Url(s)
 
 ## How to test if it works
 - probably something like have a super mini game and have them build and run it
+
+## Labs
+1. lab 1...
+
+## Where to go next
+- suggest things like courses, resources and to keep doing your own projects, ie dont get stuck in tutorial hell
