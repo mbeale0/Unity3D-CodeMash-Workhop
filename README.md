@@ -6,7 +6,7 @@ the end of the level, dodging obstacles along the way.
 
 ## Pre-requisites:
 ### Unity
-This will be done using Unity 202x.X.X, but in theory any version should work, but you can downlaod this version from here:
+This will be done using Unity 202x.X.X, but in theory any version should work, but you can download this version from here:
 Add URL
  - add/attach/write tutorial on how to install, including for different OS's
  - I will be working off of Windows, but Linux and MacOS should work fine
