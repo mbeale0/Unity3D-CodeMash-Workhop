@@ -6,7 +6,8 @@ the end of the level, dodging obstacles along the way.
 
 ## Pre-requisites:
 ### Unity
-This will be done using Unity 2022.2.21. Since this is the basics, any version should work, but the same version is better. You can download it from here:
+This will be done using Unity 2022.2.21. 
+Since this is the basics, any version should work, but it is better to have the same version. You can download it from here:
 https://unity.com/releases/editor/archive#:~:text=Release%20Notes-,Unity%202022.2.21,-May%2024%2C%202023 (Unity Hub recommended, but not needed)
  - Follow this video till the end for steps to install, starting at 2:19: https://youtu.be/Kh_FD0Ypdhg?t=139
  - This Method will also install an IDE
