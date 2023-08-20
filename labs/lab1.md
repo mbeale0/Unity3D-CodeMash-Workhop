@@ -14,7 +14,7 @@ Two things need to happen so this ball will roll down the ramp.
   1. It needs to be affected by physics like gravity
   2. It needs to detect when it hits the ramp. In a physics engine, objets need to be told to detect collisions
 
-This is actually a really simple process. The reason we use engines like Unity is because they do a lot of the heavy lifting for us, like a JavaScript framework or a Python library. Still in the inspector view of the ball, scroll **Note to Mason: Might not need to scroll** to the bottom and click the "Add Component " button.
+This is actually a really simple process. The reason we use engines like Unity is because they do a lot of the heavy lifting for us, like a JavaScript framework or a Python library. Instead of hardcoding all these interactions we can use what Unity gives us. Still in the inspector view of the ball, scroll **Note to Mason: Might not need to scroll** to the bottom and click the "Add Component " button.
 
 In the search bar that appears, type in "rigidbody" and select the option that comes up for "RigidBody3D" **Note to Maon: Check Name**Another great thing about Unity specifically is that it has very mature documentation, so instead of rewriting the wheel, I'll let them explain what a rigidbody does: "Adding a Rigidbody component to an object will put its motion under the control of Unity's physics engine. Even without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with incoming objects if the right Collider component is also present." - [reference](https://docs.unity3d.com/ScriptReference/Rigidbody.html)https://docs.unity3d.com/ScriptReference/Rigidbody.html
 **Note to Mason: check default settings of rigidbody**
