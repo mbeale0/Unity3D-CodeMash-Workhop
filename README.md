@@ -4,6 +4,8 @@ This is a soft intro to the Unity game engine. Follow along in the labs to fix, 
 The game you are trying to make is a simple one, using primarily Unity primitives. The goal of the game is to roll the ball to 
 the end of the level, dodging obstacles along the way.
 
+_**Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops etc)**_
+
 ## Pre-requisites:
 ### Unity
 This will be done using Unity 2022.2.21. 
