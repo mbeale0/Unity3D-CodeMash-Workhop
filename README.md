@@ -7,8 +7,8 @@ the end of the level, dodging obstacles along the way.
 
 
 ## Pre-requisites:
-Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops etc)
 ### Previous Coding experience
+Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops etc)
 ### Unity
 This will be done using Unity 2022.2.21. 
 Since this is the basics, any version should work, but it is better to have the same version. You can download it from here:
