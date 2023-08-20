@@ -31,10 +31,11 @@ You will also need something to edit the code. If you followed the above steps, 
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
  - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-## Cloning the base project
-Now with Git installed, you can clone the project.
+### Cloning the project
+With Git installed, you can clone the project.
  - https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
+Or you can download as a ZIP
 ## How to test if it works
 Its always good to be sure :)
 - In the Unity Hub, at the top right of the window click "open"
