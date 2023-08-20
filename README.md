@@ -13,7 +13,8 @@ Prior knowledge of Unity is not required, however some general progreamming know
 Unity is fairly easy to run for simple things such as this roller ball game, but it should be at least slightly better than a potato PC
 - Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
 - For more in depth: https://www.cgdirector.com/unity-system-requirements/ (The minimum recommendations throughout are acceptable for this lab)
-Herllo
+
+It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
 This will be done using Unity 2022.2.21. 
 Since this is the basics, any version should work, but it is better to have the same version. You can download it from here:
