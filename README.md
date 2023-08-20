@@ -1,7 +1,7 @@
 # Intro to Unity 3D Game Development
 This is a soft intro to the Unity game engine. Follow along in the labs to fix, improve, and build on a simple roller ball game.
 
-The game you are trying to make is a simple one, using primarily Unity primitives. The goal of the game is to roll the ball to 
+The game you will make is a simple one, using primarily Unity primitives. The goal of the game is to roll the ball to 
 the end of the level, dodging obstacles along the way.
 
 
@@ -9,6 +9,11 @@ the end of the level, dodging obstacles along the way.
 ## Pre-requisites:
 ### Previous Coding experience
 Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops etc)
+### Equipment
+Unity is fairly easy to run for simple things such as this roller ball game, but it should be at least slightly better than a potato PC
+- Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
+- For more in depth: https://www.cgdirector.com/unity-system-requirements/ (The minimum recommendations throughout are acceptable for this lab)
+It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
 This will be done using Unity 2022.2.21. 
 Since this is the basics, any version should work, but it is better to have the same version. You can download it from here:
