@@ -43,7 +43,7 @@ It shoild work just fine, but always good to make sure :)
 - If you can play the game, you're all set!
 
 ## Labs
-1. lab 1...
+[Lab 1...](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
 
 ## Where to go next
 - suggest things like courses, resources and to keep doing your own projects, ie dont get stuck in tutorial hell
