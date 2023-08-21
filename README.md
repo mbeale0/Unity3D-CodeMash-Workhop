@@ -44,6 +44,16 @@ It shoild work just fine, but always good to make sure :)
 
 ## Labs
 [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
+Lab 2
+Lab 3
+Lab 4
+Lab 5
+Lab 6
+Lab 7
+Lab 8
+Lab 9
+Lab 10
+Lab 11
 
 ## Where to go next
 - suggest things like courses, resources and to keep doing your own projects, ie dont get stuck in tutorial hell
