@@ -1,0 +1,1 @@
+# Adding simple obstacles and lose condition
