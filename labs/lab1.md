@@ -1,8 +1,8 @@
 # Add Pictures/graphics
-## Unity Fundamentals
+# Unity Fundamentals
 In order to work our way up to all the fun stuff in Unity, we must first get comfortable with the basics. For this lab, we'll use a prebuilt scene and add some simple functionality. And don't worry! What we use here will be used for the later labs as well
 
-In Unity, in the assets tab, open the "scenes" folder. Double click the scene "Lab1Scene" to open it
+In Unity, in the "Project" tab in the bottom half, left side, of the screen, open the "scenes" folder. Double click the scene "Lab1Scene" to open it
 **Insert picture of scene**
 The goal of this scene will be to get the ball to roll down the ramp, and through a finish line, which we'll add in a minute.
 If you want, you can press the play button on the top of the window to see how nothing happens. Absolutely thrilling.
