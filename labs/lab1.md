@@ -21,11 +21,9 @@ The Sphere contains basic features (known as components) that most objects in a 
   4. Sphere Collider - Used to define where and how collisions should take place on the object in interaction with physics
   5. Dark Green (Material) - The material applied to an object giving it color or texture and other visual values
 
-Two things need to happen so this ball will roll down the ramp. 
-  1. It needs to be affected by physics like gravity
-  2. It needs to detect when it hits the ramp. In a physics engine, objets need to be told to detect collisions
+In order to get the ball to roll down the ramp simply requires that physics have an effect on the object.
 
-This is actually a really simple process. The reason we use engines like Unity is because they do a lot of the heavy lifting for us, like a JavaScript framework or a Python library. Instead of hardcoding all these interactions we can use what Unity gives us. Still in the inspector view of the bal; click the "Add Component " button right below the material.
+Thankfully, this is actually a really simple process. The reason we use engines like Unity is because they do a lot of the heavy lifting for us, like a JavaScript framework or a Python library. Instead of hardcoding all these interactions we can use what Unity gives us. Still in the inspector view of the bal; click the "Add Component " button right below the material.
 
 In the search bar that appears, type in "rigidbody" and select the option that comes up for "Rigidbody". Another great thing about Unity specifically is that it has very mature documentation, so instead of rewriting the wheel, I'll let them explain what a rigidbody does: "Adding a Rigidbody component to an object will put its motion under the control of Unity's physics engine. Even without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with incoming objects if the right Collider component is also present." - [reference](https://docs.unity3d.com/ScriptReference/Rigidbody.html)https://docs.unity3d.com/ScriptReference/Rigidbody.html
 
