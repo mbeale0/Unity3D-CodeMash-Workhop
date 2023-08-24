@@ -3,10 +3,11 @@
 In order to work our way up to all the fun stuff in Unity, we must first get comfortable with the basics. For this lab, we'll use a prebuilt scene and add some simple functionality. And don't worry! What we use here will be used for the later labs as well
 
 In Unity, in the "Project" tab in the bottom half, left side, of the screen, open the "scenes" folder. Double click the scene "Lab1Scene" to open it
-[OpenedFirstScene](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/4e954227-ecf0-40a3-b048-834e4d5e0bb7)
+
 
 The goal of this scene will be to get the ball to roll down the ramp, and through a finish line, which we'll add in a minute.
 If you want, you can press the play button on the top of the window to see how nothing happens. Absolutely thrilling.
+
 **Note: Unity does not autosave. Either hit "ctrl-s" or in the top left file -> save**
 
 ## Getting the ball to roll
@@ -30,3 +31,4 @@ In the search bar that appears, type in "rigidbody" and select the option that c
 In other words, our sphere will move now. Go ahead and enter play mode by clicking the play at the top of the screen, or hit "ctrl-p". Watch the ball roll down the ramp and fall forever! Yippe! Click the play button or "ctrl-p" again to exit playmode
 
 ## Adding a simple finish line!
+![OpenedFirstScene](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/4aa5eb42-4b2c-4c02-b579-8d0f827f9faf)
