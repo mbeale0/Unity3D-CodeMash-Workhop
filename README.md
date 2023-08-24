@@ -8,7 +8,7 @@ the end of the level, dodging obstacles along the way.
 ### Previous Coding experience
 Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops, etc)
 ### Equipment
-Unity is fairly easy to run for simple things such as this roller ball game, but it should be at least slightly better than a potato PC
+You'll need a laptop(if attending in person) or desktop with Windows, Linux, or Mac installed
 - Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
 - For more in depth: https://www.cgdirector.com/unity-system-requirements/ (The minimum recommendations throughout are acceptable for this lab)
 
@@ -19,6 +19,8 @@ Since this is the basics, any version should work, but it is better to have the 
 https://unity.com/releases/editor/archive#:~:text=Release%20Notes-,Unity%202022.2.21,-May%2024%2C%202023 (Unity Hub recommended, but not needed)
  - Follow this video till the end for steps to install, starting at 2:19: https://youtu.be/Kh_FD0Ypdhg?t=139
  - This Method will also install an IDE, VS Community, which will be hooked up to Unity by default
+ - In one lab we will build and upload a web build so in the modules make sure to include "WebGL Build Support"
+For builds to run on your local machine you can do that following. Windows can leave as default
  - For Mac users, you need to check "Mac Build Support (Mono)" and uncheck "Windows Build Support"
  - For Linux, to install Unity Hub: https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
  - For the purpose of this tutorial, Linux users can choose either mono or IL2CPP when choosing "Linux Build Support" in the modules
