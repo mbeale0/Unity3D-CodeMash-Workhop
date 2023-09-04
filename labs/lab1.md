@@ -51,7 +51,7 @@ Tip #1: You'll probably need to readjust your scene view to be viewing more from
 
 Tip #2: You can click on the squares next to the arrows to move two axes at a time
 
-Once you have the cube in a decent position like shown:
+Result:
 ![CubeMoved](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/50eed425-ac84-4d6d-b6ca-bb09be880410)
 
 Before we go any further, lets make things a little easier on ourselves, and rename the cube. Either in the inspector where it says "Cube (1)" or by clickin on the cube in the heiracrhy, and pressing F2, rename the cube to something more helpful, like "Finish Line" or "Goal"
@@ -66,8 +66,7 @@ The position, scale, and rotation tools all work the same way. Using the colors 
 Depending on how you brought over your cube, you can use the blue axis to stretch that out to be roughly the same length as the ramp. We can always adjust this later, don't worry about getting it perfect. 
 We can make it look a little better by adjusting the green Y axis, and shrinking the height of the cube. Since this scales evenly from both sides, it will likely not be in line with the ramp anymore, so in the transform, hover over the "Y" value for the position.
 When you see two mini arrows by your cursor, you can click and drag left and right to also adjust the settings that way. This works with any numeric fields like these. Go ahead and get the finish line back in line.
-![CubeMoved](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/5d92405f-9e34-465a-826a-4f5e30da9d14)
-
+![finishlineobject](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/d1c07c9f-5616-46c3-9a3f-09b021bba661)
 
 So we have our finish line object, now what? We need to have something detect when the ball passes over the finsh line, and something to handle logic when it does.
 
