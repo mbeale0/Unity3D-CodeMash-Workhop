@@ -102,7 +102,7 @@ Instead, start typing "OnTriggerEnter". Assuming you have intellisense enabled, 
 ![EmptyTrigger](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/74a24cef-43a2-4f79-8997-89d08ae71c7f)
 
 
-As you may have guessed, this function will run when ever an object enters the trigger. https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html **Add inline version**
+As you may have guessed, this function will run when ever an object enters the trigger. (Docs on function: https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html)
 Some things to note:
   1. The script must be attached to the object with the trigger
   2. Both objects must have a collider attached
