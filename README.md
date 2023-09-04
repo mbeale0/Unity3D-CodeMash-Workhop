@@ -45,6 +45,7 @@ It shoild work just fine, but always good to make sure :)
 - If you can play the game, you're all set!
 
 ## Labs
+Before starting, make sure you check out the "Start of Labs" branch
 [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
 
 [Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
