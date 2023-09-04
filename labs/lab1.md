@@ -48,6 +48,7 @@ Using this knowledge, navigate in your scene to where you are looking at a sort 
 Now feel free to use the arrows on the cube(if you happen to have deselected it, you can reselect it in the heirarchy or the scene) and try to align it toward the bottom of the ramp.
 
 Tip #1: You'll probably need to readjust your scene view to be viewing more from the side. Later we'll add some simple materials to make it easier to see the objects
+
 Tip #2: You can click on the squares next to the arrows to move two axes at a time
 
 Once you have the cube in a decent position like shown:
