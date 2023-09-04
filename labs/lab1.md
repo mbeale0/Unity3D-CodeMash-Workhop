@@ -67,4 +67,62 @@ We can make it look a little better by adjusting the green Y axis, and shrinking
 When you see two mini arrows by your cursor, you can click and drag left and right to also adjust the settings that way. This works with any numeric fields like these. Go ahead and get the finish line back in line.
 
 
-So we have our finish line object, now what? We need to have something detect when the ball passes over the finsh line, and something to handle logic when it does
+So we have our finish line object, now what? We need to have something detect when the ball passes over the finsh line, and something to handle logic when it does.
+
+Let's start with simply adding a detection component, in this case, a collider. Again, I'll let the experts explain: "Collider components define the shape of an object for the purposes of physical collisions. 
+A collider, which is invisible, need not be the exact same shape as the object’s mesh and in fact, a rough approximation is often more efficient and indistinguishable in gameplay."
+
+In the hierarchy, if you click on the "FinishLine", you'll already see a "box collider" component attached. It's currently hard to see, as it is perfectly around the mesh of the cube.
+There are two main ways to use a collider, as a trigger or not as a trigger. The default was has the "Is Trigger" field of the component turned off. This essentially treats the object like a normal hard object, IE
+if something hits(or collides) with the object, the two objects don't merge, they stay separated by their colliders. This is how it works right now. Our ball would roll down the ramp, and roll over the finish line.
+We want to keep this functionality, at least for now(feel free to experiment for what you like!). But we still need to detect when the ball rolls over. We could use a method in code for detecting collisions without triggers, but that isn't exactly what we want right now.
+Instead, we are going to use a trigger, and detect that in code.
+
+We can actually have multiple colliders on one object. At the bottom of the inspector for "FinishLine" click "Add Component" and type in "box collider". Click the first option(do NOT click the one that says "2D")
+
+This add a new collider, though in the exact same way as the default. Under the "Box collider component", in the "size" field, change the y value to something like 7. You should see green borders roughly the same shape appear a little taller than the main box!
+Similary, under the "Center" field, enter in a value of 3 for Y. to also make sure the ball crosses over completely before winning, change the x value of "Size" to something like .5
+
+Now the last step we need to do is on the same box collider(Don't get the two confused!), is to click the checkbox for "Is Trigger" so it is marked as a trigger. This allows objects to pass through each other, and be detected in code. Often useful for things like pickups among many others.
+**Insert picture finislinecollider**
+
+Now it's finally time to add some code!
+
+Go ahead and click the "Add Component" button again on the Finish Line object. This time, let's type in what we want to name our script. How about: "FinishLineManager" - feel free to choose your own name, but just remember it when we come back later. 
+Click the "new script" button, then click "Create and Add". This will add the script to the /assets/ folder. You can double click the script name in the "Script" field of the newly created component, or click the script icon in the /assets/ folder to open the script.
+
+Upon opening your file, you should see two very important Unity functions: Start and Update, with comments explaining their function. For a quick example, Start would be used for setting up a scene before play, and update would be used to check for input.
+
+Delete them, and their comments.
+
+Don't worry, we'll come back to them later, but we don't need them for this.
+
+Instead, start typing "OnTriggerEnter". Assuming you have intellisense enabled, you should soon see an option for "OnTriggerEnter" pop up, click enter or your mouse on that option, and the following should appear:
+**Insert EmptyTrigger Image"
+
+
+As you may have guessed, this function will run when ever an object enters the trigger. https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html **Add inline version**
+Some things to note:
+  1. The script must be attached to the object with the trigger
+  2. Both objects must have a collider attached
+  3. One or both objects must have a rigidbody
+
+As the scene is right now, this will run when the ball gets to the bottom of the ramp. We can do a couple simple things right now to get this set up, but we'll expand it's features later.
+
+In the function, add the following lines: **add code block**
+Debug.Log("Finished!");
+Time.timeScale = 0;
+
+The Log statement will simply print to the console, and the timeScale is simply the rate at which speed passes. 1 is the default. 0 essentially stops time, making it useful for pausing. You could also set a value
+like ".5f" to enter a slowmotion state if you want. (the "f" is required to denote a float value)
+
+Hit "ctrl-s" to save the script
+
+## Testing our work
+Once your script is saved, go ahead and click back into the Unity editor(it may take a minute as the scripts reload).
+
+If you forgot like me, make sure to save in the editor as well. Now go ahead and select the "console" window near the bottom of the screen, and click the play button at the top!
+
+The editor should automatically switch to the "Game" view, and the ball will start rolling down the hill. When it reaches the bottom, it will output our Log and freeze time!
+
+Congrats, you did it!
