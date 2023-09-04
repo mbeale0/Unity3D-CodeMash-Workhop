@@ -27,7 +27,7 @@ Thankfully, this is actually a really simple process. The reason we use engines 
 In the search bar that appears, type in "rigidbody" and select the option that comes up for "Rigidbody". Another great thing about Unity specifically is that it has very mature documentation, so instead of rewriting the wheel, I'll let them explain what a rigidbody does: "Adding a Rigidbody component to an object will put its motion under the control of Unity's physics engine. Even without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with incoming objects if the right Collider component is also present." - [reference](https://docs.unity3d.com/ScriptReference/Rigidbody.html)https://docs.unity3d.com/ScriptReference/Rigidbody.html
 
 ## Adding a simple finish line
-Of course as fun as watching the infinite falling ball is, that's not really greate for a final game. Let's dive a little into the Unity scene editor to add a simple finish line.
+Of course as fun as watching the infinite falling ball is, that's not really great for a final game. Let's dive a little into the Unity scene editor to add a simple finish line.
 
 In the top left of the screen, find the "GameObject" tab. This allows us to quickly add default Unity objects to our scenes, such as primitives(basic shapes), Cameras, UI, and more.
 
@@ -54,7 +54,7 @@ Tip #2: You can click on the squares next to the arrows to move two axes at a ti
 Result:
 ![CubeMoved](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/50eed425-ac84-4d6d-b6ca-bb09be880410)
 
-Before we go any further, lets make things a little easier on ourselves, and rename the cube. Either in the inspector where it says "Cube (1)" or by clickin on the cube in the heiracrhy, and pressing F2, rename the cube to something more helpful, like "Finish Line" or "Goal"
+Before we go any further, lets make things a little easier on ourselves, and rename the cube. Either in the inspector where it says "Cube (1)" or by clicking on the cube in the heiracrhy, and pressing F2, rename the cube to something more helpful, like "Finish Line" or "Goal"
 
 You may noticed it doesn't fit super well. It's time to adjust the scale, another key transform value. Just like the position, the scale can be adjusted in the scene or inspector, though unlike position it isn't a big difference which you choose.
 Let's start with the in scene usage. While still selected on the finish line, hit "r", this will transform the position tool to the scale tool. You can also use the "tools" menu in the top left of the scene.
