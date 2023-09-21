@@ -60,5 +60,14 @@ Finally, let's add back in the Finish line. It should be pretty straightforward 
 <details><summary> Click here to see how to add the Finish Line</summary> 
 Just like the player, click and drag the "Finish Line" prefab into the scene.
 
-You can use the same trick as earlier to get it on the same height as the other objects by copying over the z value. THen use the red and blue arrows, or the square between them to line it up on the other side of the platform. 
+You can use the same trick as earlier to get it on the same height as the other objects by copying over the z value. Then use the red and blue arrows, or the square between them to line it up on the other side of the platform. 
 </details>
+
+Congrats! One last thing we want to do. Moving the camera so the game is actually playable(and speaking of seeing the game, don't worry about all the white. It's a lot to look at, we'll also fix that later.
+
+For now we'll have a static camera, and later we'll add one that can move with the player. In the scene view, get into a position that feels like a decent camera angle. Once there, right click the "Main Camera" in the hierarchy, and towards the bottom, select "Align with view"
+
+And Tada! This level is now ready for more features. Stay tuned, and we'll finally add some player movement and controls!
+![done](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/bbf78bcf-0eee-4baa-9d7d-6c3909be36e6)
+
+
