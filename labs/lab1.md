@@ -56,7 +56,7 @@ Result:
 
 Before we go any further, let's make things a little easier on ourselves, and rename the cube. Either in the inspector where it says "Cube (1)" or by clicking on the cube in the hierarchy, and pressing F2, rename the cube to something more helpful, like "Finish Line" or "Goal"
 
-You may noticed it doesn't fit super well. It's time to adjust the scale, another key transform value. Just like the position, the scale can be adjusted in the scene or inspector, though unlike position it isn't a big difference which you choose.
+You may have noticed it doesn't fit super well. It's time to adjust the scale, another key transform value. Just like the position, the scale can be adjusted in the scene or inspector, though unlike position it isn't a big difference which you choose.
 Let's start with the in-scene usage. While still selected on the finish line, hit "r", this will transform the position tool into the scale tool. You can also use the "tools" menu in the top left of the scene.
 
 Similarly to pressing "r", you can press "e" for rotation, "w" for position, and even "t" for a rect tool, which can be used for UI.
