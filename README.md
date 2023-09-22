@@ -37,7 +37,7 @@ With Git installed, you can clone the project.
 
 Or you can download as a ZIP
 ## How to test if it works
-It shoild work just fine, but always good to make sure :)
+It should work just fine, but always good to make sure :)
 - In the Unity Hub, at the top right of the window click "open"
 - Navigate to the directory where you cloned the project, and open "RockPaperScissors" in the main folder
 - Once Unity loads, click the "console" tab in the bottom of the window next to "assets" to view game results
