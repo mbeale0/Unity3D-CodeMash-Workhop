@@ -40,7 +40,9 @@ Or you can download as a ZIP
 It should work just fine, but always good to make sure :)
 - In the Unity Hub, at the top right of the window click "open"
 - Navigate to the directory where you cloned the project, and open "RockPaperScissors" in the main folder
-- Once Unity loads, click the "console" tab in the bottom of the window next to "assets" to view game results
+- Once Unity loads, if the game is not on the center screen click the "assets" tab in the bottom of the window next to "console"
+- Double click to enter the "scenes" folder, then double click the "Main" scene
+- Once on the game scene, click the "console" tab in the bottom of the window to view game results
 - Click the play button at the top of the editor
 - If you can play the game, you're all set!
 
