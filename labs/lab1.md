@@ -111,6 +111,7 @@ Some things to note:
 As the scene is right now, this will run when the ball gets to the bottom of the ramp. We can do a couple simple things right now to get this set up, but we'll expand it's features later.
 
 In the function, add the following lines:
+
 ``` C#
 Debug.Log("Finished!");
 Time.timeScale = 0;
