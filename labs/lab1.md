@@ -110,10 +110,11 @@ Some things to note:
 
 As the scene is right now, this will run when the ball gets to the bottom of the ramp. We can do a couple simple things right now to get this set up, but we'll expand it's features later.
 
-In the function, add the following lines: **add code block**
+In the function, add the following lines:
+``` C#
 Debug.Log("Finished!");
 Time.timeScale = 0;
-
+```
 The Log statement will simply print to the console, and the timeScale is simply the rate at which speed passes. 1 is the default. 0 essentially stops time, making it useful for pausing. You could also set a value
 like ".5f" to enter a slow-motion state if you want. (the "f" is required to denote a float value)
 
