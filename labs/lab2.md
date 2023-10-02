@@ -52,7 +52,7 @@ Now let's add the rest of our simple level. Go ahead and add another plane just 
 Move the plane so that one of the edges aligns with one of the edges of the starting plane, it doesn't really matter which. A small gap or overlap is okay.
 ![platforn](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/036c2da6-cec8-4cc5-bcad-73300f62eb99)
 
-Now, depending on which way you moved the platform, shrink either the red x or blue z axis to create a narrower platform, but a little bigger than the start. Then the opposite axis, expand to create 
+Now, depending on which way you moved the platform, shrink either the red x or blue z axis to create a narrower platform, but a little bigger than the start. Then using the opposite axis, expand to create 
 a longer pathway. I used a length of 2. Again, we'll expand this more later. We just want a simple "boxed out" level to start adding features. You'll also need to line up the edges again after that.
 
 Finally, let's add back in the Finish line. It should be pretty straightforward by now, so try and add it yourself before reading what I do
