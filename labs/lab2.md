@@ -57,7 +57,7 @@ a longer pathway. I used a length of 2. Again, we'll expand this more later. We 
 
 Finally, let's add back in the Finish line. It should be pretty straightforward by now, so try and add it yourself before reading what I do
 
-<details><summary> _Click here to see how to add the Finish Line_</summary> 
+<details_><summary> Click here to see how to add the Finish Line</summary>_ 
 Just like with the player prefab, click and drag the "Finish Line" prefab into the scene.
 
 You can use the same trick as earlier to get it on the same height as the other objects by copying over the z value. Then use the red and blue arrows, or the square between them to line it up on the other side of the platform. 
