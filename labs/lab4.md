@@ -52,6 +52,7 @@ Now try on your own to add the necessary code to 1. output to the console the pl
 Awesome! The code is done. If you tried to test your code, and you may have noticed I "totally on purpose for learning purposes" forgot a step. If you happened to catch it and were able to fix it, great! If not, no worries. I'm teaching you this and I forgot.
 
 In order to actually check if there when an object enters a trigger, _there must actually be a trigger_. Select the boundary object, and under box collider, engable "Is Trigger"
+
 ![IsTrigger](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/19e0a5d4-b15d-4d2c-940f-078f04cee767)
 
 And tada, things magically work! Now it's time to try and push our players in the death zone.
