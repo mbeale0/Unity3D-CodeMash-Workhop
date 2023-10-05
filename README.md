@@ -6,7 +6,7 @@ the end of the level, dodging obstacles along the way.
 
 ## Pre-requisites:
 ### Previous Coding experience
-Prior knowledge of Unity is not required, however some general progreamming knowledge is preferred(knowledge of simple things like conditionals, variables, loops, etc)
+Prior knowledge of Unity is not required, however some general programming knowledge is preferred(things like conditionals, variables, loops, etc)
 ### Equipment
 You'll need a laptop(if attending in person) or desktop with Windows, Linux, or Mac installed
 - Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
