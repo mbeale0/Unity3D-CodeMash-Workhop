@@ -1,7 +1,7 @@
 # Intro to Unity 3D Game Development
 This is a soft intro to the Unity game engine. Follow along in the labs to fix, improve, and build on a simple roller ball game.
 
-The game you will make is a simple one where the goal roll the ball to the end of the level, dodging obstacles along the way. Your
+The game you will make is a simple one where the goal is to roll the ball to the end of the level, dodging obstacles along the way. Your
 goal in learning is not to dive super deep into a few places, but to get your toes wet in many aspects of game development in Unity, 
 giving you the knowledge to continue to learn and grow on your own.
 
