@@ -1,4 +1,4 @@
-# Win and lose UI
+# Win and lose UI - WIP
 With a longer level, basic winning/losing and obstacles, we have a fairly solid base game. If we were doing a simple versioning, this would be like version 1. A basic minimum viable product. I think it's time to start working on "version 2" to keep with that analogy, and flesh out the game a bit. A quick and easy way to this is to have some simple UI when we win and lose so a real player could more easily play again, or quit. (right now we can easily do that in the Editor where we have a play button. That doesn't exist in a build).
 
 ## Adding the UI
