@@ -6,7 +6,6 @@ public class BoundaryManager : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("You lose!");
-        Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandleGameOver("You Lose!!!");
     }
 }
