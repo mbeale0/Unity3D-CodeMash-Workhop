@@ -91,17 +91,139 @@ Navigate back to the text object, and under the text component find "Font Asset"
 
 It looks good, but let's add something we can give functionality too, in the form of buttons!
 
-Add a button just like we added the font. Right click on Canvas -> UI -> Button - TextMeshPro. Name this button "RestartButton".
+Add a button just like we added the font. Right click on Canvas -> UI -> Button - TextMeshPro. Name this button "QuitButton".
 
-Feel free to add anothe custom font to this by selecting the dropdown arrow in the inspector next to the object in the inspector and selecting the child text objext. You can change the font in the exact same way as before, by clicking the bullseye next to "Font Asset". While changing the font, let's change the text to "RESTART"
+Feel free to add anothe custom font to this by selecting the dropdown arrow in the inspector next to the object in the inspector and selecting the child text objext. You can change the font in the exact same way as before, by clicking the bullseye next to "Font Asset". While changing the font, let's change the text to "QUIT". We can also enabkle the "Auto Size" field of Font Style.
 
-Reslect the button.
+Reselect the actual button object, and let's align it to the bottom right of the screen. We can do this by clicking the Rect Transform anchor widget -> holding ALT -> clicking square aligned with bottom right.
 
-Let's get these buttons
-  // Edit/adjust Buttons
-  // Custom UI 
+This will set the anchors to the bottom right corner and also move the button down. Notice how when we alt click, Unity automatically keeps the button completely in screen.
+
+You can align/size your button as you see fit, but I am gonna move mine to be just a little right of center, and also increase the scale by 1.5. (We'll add another button in just a moment, which is why I have it offset of center). Here is what I set mine to:
+
+![transform](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/e97a7e5d-7e8f-4cc5-bea8-91971673391b)
+
+Let's add one more customization to this screen by getting rid of the basic Unity button image. Much like the fonts, I loaded some in already in /Assets/Icons/. There are some extra things there, so look around fo the ones you want. I am going to get mine from simpleUI&Icons/button/button_login.
+
+For some of these, they won't work right off the bat. We have to conver them from a simple image to a 2D Sprint. Select the button you want and the image editor will open in the inspector. Texture Type needs to be "Sprite (2D & UI)", then click apply in the bottom right.
+
+![SpriteCreator](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/a7a61668-79a2-4f4e-826e-58afb8ac7068)
+
+This new Sprite will simply replace the asset you choose, so you can find the Sprite wherever you originally found the asset. Now all we have to do is select the button and drag the Sprite into the Button's image component, for the "Source Image" field.
+
+![Button image](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/40c80636-ce47-44bc-9460-ed961567acc6)
+
+Things are looking good! Let's quickly add another button then get into the code. Since our quit button is mostly default functionality except for some styling which we will likely want to keep across all buttons, we can just copy and paste it, by selecting it in the scene or heirarchy, and pressing "CTRL-C" and "CTRL-V". Name this "RestartButton".
+
+Now just a few quick things we need to do. 
+1. Navigate to the buttons text child and change the text to "RESTART"
+2. Use the Rect Transform to align this to bottom left
+3. Set X to 250 and Y to 150
+
+![FinishedMenu](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/4e8d152a-a4cd-4f73-b4e8-e368d511ce48)
+
+Now we have a semi decent looking menu! It would be cooler if it works, so let's do that now! (Make sure to save your scene)
 
 ## Adding the code
-// Create GameManagerScript
-  // public function to end game
-// MenuMangerScript to handle buttons
+In the Scripts folder, right click and create a new Script called "MenuController". Open this script.
+
+We can delete the template code for Start and Update.
+
+First create a public function with no return called OnRestart(). If we later decided to introduce checkpoints or different things like that, we might need a little more complicated logic here, but we only need one line. We simply use Unity's _SceneManager_ class and it's function _LoadScene__, which we can set the level name as the input, giving us the following code:
+
+``` C#
+public void OnRestart()
+{
+    SceneManager.LoadScene("Level1");
+}
+```
+
+Similary, create a function called OnQuit() with the line "Application.Quit();"
+
+``` C#
+public void OnQuit()
+{
+    Application.Quit();
+}
+```
+
+And that's (almost) it! A far as simply menu logic, that really is it. However, we need to prooperly implement this.
+
+First, quickly create a new Script in Unity called _GameManager_. 
+
+We do not need Update, but we will use Start. We also need two serialized fields in this script, and a function called "HandleGameOver" that takes a string argument called "textToDisplay"
+
+The fields we need are the canvas and the text object:
+
+``` C#
+[SerializeField] private GameObject canvas = null;
+[SerializeField] private TMP_Text canvasText = null;
+```
+
+You'll also need to add "using TMPro;" in the list of using statements at the top.
+
+Add the following line to Start:
+``` C#
+canvas.setActive(false);
+```
+We only want the UI visible when we choose it to be so this turns it off for us. We can turn it off in the scene view, but this is good in case we forgot.
+
+Next let's add our function. This needs to do several things:
+1. Change the Canvas text so we can use it for both win and lose
+2. Enable the canvas
+3. Stop time
+
+You already know how to do two of those, go ahead and try that before looking at the code
+
+
+``` C#
+public void HandleGameOver(string textToDisplay)
+{
+    canvasText.text = textToDisplay;
+    canvas.SetActive(true);
+    Time.timeScale = 0;
+}
+```
+
+We also have to hook these up in both the _BoundaryManager_ and _FinishLineManager_
+Simply replace the log and timescale in both functions with the following code:
+``` C#
+GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandleGameOver("You Lose!!!");
+```
+Substituting the string "You Lose!!!" for some victory message for teh FinishLineManager.
+
+Note also how we find the GameManager Script. It uses a tag, which is basically a string id for objects. Strings can be difficult to remember, but they are very helpful, so use them wisely. This way we don't have to use use tons of SerializeFields everytime we create a new scene.
+
+Save these scripts and switch back to Unity for the finishing steps.
+
+## Finishing Steps
+First, add the GameManager Script to the Camera. Also notice the GameManager Script is a gear, this is a simple Unity thing. It does not change functionality.
+
+We also need to add the tag to the Camera:
+
+![AddTag](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/0a7dd5f6-9d77-4a06-bf07-c41b18fa7adc)
+
+After selecting "Add Tag" Press the plus button in the Tag dropdown, change the name to "GameManager" and hit save. Not switch back to the camera and actually add the tag. (use the same dropdown as we did to add a new tag, but choose our new tag instead). While on the camera, we also want to drag the Canvas and the text objects into the GameManager Script.
+
+For the last part, we need to hook the buttons up. We need the MenuController Script somewhere in the scene and since the Canvas holds the menu, that should be a good spot. Add the Script to the Canvas object.
+
+With that added, select tthe quit button, and at the bottom of the actual button component, in the "On Click ()" field, press the plus button. Drag the Canvas into the "None Object()" field so the button has a reference to the function, which we can hook up by selecting the "No Function" drop down - > Menu Controller -> OnQuit
+
+![AddingFunction](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/24637cf2-389e-4c00-a931-aa49103c2cbf)
+
+Now do the same thing for the restart button, except choosing OnRestart.
+
+Now if you play the game and die or lose, your menu should be able to come up! We can't actually quit because we are playing in the editor(we'll see soon how to build the game).
+
+Restart does actually restart, but something seems to be acting a little funny. Think for a moment, and see if you can figure out the issue.
+
+The issue is that the timescale is still set to 0! Such an easy thing to miss. We can add this fix in the "OnRestart" Method:
+``` C#
+Time.timeScale = 1.0f;
+SceneManager.LoadScene("Level1");
+```
+And Voila! Everything is as it should be!
+
+High five your neighbor or do a little dance, cause your game is making tons of progress!
+
+Get ready for the next lab now. It'll be a big challenge, you'll get a chance to do everything on your own before I show you, then we'll take a quick break.
