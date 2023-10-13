@@ -6,7 +6,6 @@ public class FinishLineManager : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Finished!");
-        Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandleGameOver("You Win!!!");
     }
 }
