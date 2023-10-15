@@ -47,28 +47,38 @@ It should work just fine, but always good to make sure :)
 - Click the play button at the top of the editor
 - If you can play the game, you're all set!
 
-## Labs
+## Schedule
 Before starting, make sure you check out the "Start of Labs" branch
+1. Intro and Welcome
+1. Presentations
+   
+1. [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
 
-[Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
+1. [Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
 
-[Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
+1. [Lab 3](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab3.md)
 
-[Lab 3](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab3.md)
+1. [Lab 4](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab4.md)
 
-[Lab 4](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab4.md)
+1. Break ~5 minutes
 
-[Lab 5](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab5.md)
+1. [Lab 5](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab5.md)
 
-[Lab 6](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab6.md)
+1. [Lab 6](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab6.md)
 
-[Lab 7](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab7.md)
+1. Break ~ 10 minutes
 
-[Lab 8](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab8.md)
+1. [Lab 7](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab7.md)
 
-[Lab 9](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab9.md)
+1. [Lab 8](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab8.md)
 
-[Lab 10](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab10.md)
+1. Break?
+
+1. [Lab 9](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab9.md)
+
+1. [Lab 10](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab10.md)
+
+1. Wrap-up
 
 ## Where to go next
 - suggest things like courses, resources and to keep doing your own projects, ie dont get stuck in tutorial hell
