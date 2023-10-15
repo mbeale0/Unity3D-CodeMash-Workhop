@@ -60,4 +60,13 @@ public void OnResume()
 }
 ```
 
-// Test
+Finally, we can hook it up in the editor:
+Let's first off remove the Menu Controller from both Canvases, and create a new empty Object called "UI". Add the menu controller to this object, drag and drop both Canvases to be children of this object, and drag and drop the pause Canvas into the field of the MenuController.
+
+Now let's rehook up all the buttons.
+
+On the normal canvas, expand it so you can access "QuitButton" and "RestartButton". Drag "UI" into their on click methods, and in the "No Function" drop down select the correct method.
+
+Now do the same thing for the pause canvas, and finally hook up the Pause Canvas in the Game Manager Script we added to the camera.
+
+Make sure to save your scene. Play test the game and revel in the fact you can now control time at your will!
