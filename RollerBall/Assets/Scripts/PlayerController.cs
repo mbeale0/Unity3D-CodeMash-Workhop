@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
             MoveX = 0;
         }
 
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandlePause();
+        }
     }
 
     private void FixedUpdate()
