@@ -49,8 +49,10 @@ It should work just fine, but always good to make sure :)
 
 ## Schedule
 Before starting, make sure you check out the "Start of Labs" branch
+
 1. Intro and Welcome
-1. Presentations
+ 
+1. Presentation
    
 1. [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
 
