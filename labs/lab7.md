@@ -7,8 +7,11 @@ We can do this Mario style, where a certain number of coins will give a bonus li
 ## Setup
 First off, let's set ourselves up for places to have coins and our checkpoints.
 // Add two cubes for checkpoints
+
 // copy and paste level base twice
+
 // Set Tags for start, checkpoints(2) and End
+
   // Add transforms on checkpoints and start for spawning(note, we can simply reload level since we have no real save system. TBD)
   
 ## Coin Pickup
