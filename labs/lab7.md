@@ -7,27 +7,24 @@ We can do this Mario style, where a certain number of coins will give a bonus li
 ## Setup
 First off, let's set ourselves up for places to have coins and our checkpoints.
 
-// Add two cubes for checkpoints
-
-// copy and paste level base twice
-
-// Set Tags for start, checkpoints(2) and End
-
-    // Add transforms on checkpoints and start for spawning(note, we can simply reload level since we have no real save system. TBD)
+// Add two cubes for checkpoints  
+// copy and paste level base twice  
+// Set Tags for start, checkpoints(2) and End  
+&ensp;&ensp;// Add transforms on checkpoints and start for spawning(note, we can simply reload level since we have no real save system. TBD)  
   
 ## Coin Pickup
-// Add Cylinder and shrink it down to look vaugely like coin
-  // Add world space text with dollar sign?
-// Place this and duplicate over platforms
-// Create Coin Manager Script
-  // Rotation
-  // OnTriggerEnter
-// UI/storage for number of coins
+// Add Cylinder and shrink it down to look vaugely like coin  
+&ensp;&ensp;// Add world space text with dollar sign?  
+// Place this and duplicate over platforms  
+// Create Coin Manager Script  
+&ensp;&ensp;// Rotation  
+&ensp;&ensp;// OnTriggerEnter  
+// UI/storage for number of coins  
 
 ## Lives
-// UI for Lives
-// Logic
-  // Initial number of lives
-  // Adding of lives by number of coins
-  // hook up to UI
-  // spawning based on Lives
+// UI for Lives  
+// Logic  
+&ensp;&ensp;// Initial number of lives  
+&ensp;&ensp;// Adding of lives by number of coins  
+&ensp;&ensp;// hook up to UI  
+&ensp;&ensp;// spawning based on Lives  
