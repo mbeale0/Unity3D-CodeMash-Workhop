@@ -5,19 +5,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject canvas = null;
-    [SerializeField] private TMP_Text canvasText = null;
+    [SerializeField] private GameObject gameOverCanvas = null;
+    [SerializeField] private TMP_Text gameOverText = null;
+    [SerializeField] private TMP_Text coinText = null;
     [SerializeField] private GameObject pauseCanvas = null;
+
+    private int numberOfCoins = 0;
     void Start()
     {
-        canvas.SetActive(false);
+        gameOverCanvas.SetActive(false);
         pauseCanvas.SetActive(false);
+        coinText.text = $"Coins: {numberOfCoins}";
     }
 
     public void HandleGameOver(string textToDisplay)
     {
-        canvasText.text = textToDisplay;
-        canvas.SetActive(true);
+        gameOverText.text = textToDisplay;
+        gameOverCanvas.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -25,6 +29,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseCanvas.SetActive(true);
+    }
+
+    public void AddCoin()
+    {
+        numberOfCoins++;
+        coinText.text = $"Coins: {numberOfCoins}";
     }
 
 }
