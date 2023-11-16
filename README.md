@@ -15,9 +15,9 @@ You'll need a laptop(if attending in person) or desktop with Windows, Linux, or 
 
 It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
-This will be done using Unity 2022.2.21. 
+This will be done using Unity 2021.3.6. 
 Since this is the basics, any version should work, but it is better to have the same version. You can download it from here:
-https://unity.com/releases/editor/archive#:~:text=Release%20Notes-,Unity%202022.2.21,-May%2024%2C%202023 (Unity Hub recommended, but not needed)
+[https://unity.com/releases/editor/archive#:~:text=Release%20Notes-,Unity%202022.2.21,-May%2024%2C%202023](https://unity.com/releases/editor/archive#:~:text=Release%20Notes-,Unity%202021.3.6,-July%208%2C%202022) (Unity Hub recommended, but not needed)
  - Follow this video till the end for steps to install, starting at 2:19: https://youtu.be/Kh_FD0Ypdhg?t=139
  - This Method will also install an IDE, VS Community, which will be hooked up to Unity by default
  - In one lab we will build and upload a web build so in the modules make sure to include "WebGL Build Support"
