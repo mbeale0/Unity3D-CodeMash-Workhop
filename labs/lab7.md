@@ -1,4 +1,4 @@
-# Coin Pickups & Lives
+# Coin Pickups & Lives - WIP
 
 It's one thing to have a goal the player can aim for over and over again, but I think we should give them extra consequences in the form of lives.
 
@@ -18,13 +18,85 @@ For the last set up step, we simply need to change our two middle "Finish Lines"
 
 Alright, let's add some coins!
 ## Coin Pickup
-// Add Cylinder and shrink it down to look vaugely like coin  
-&ensp;&ensp;// Add world space text with dollar sign?  
-// Place this and duplicate over platforms  
-// Create Coin Manager Script  
-&ensp;&ensp;// Rotation  
-&ensp;&ensp;// OnTriggerEnter  
-// UI/storage for number of coins  
+Go ahead and add a new object, this time a _cylinder_. That's basically a really tall coin. Name this object "Coin". We can shrink the coin to a size of our liking, I will go with a Y value of about .05, and leave X and Y at 1. We can also rotate it 90 degrees to stand it up on its side so its more visible to the player.
+
+On our Coin, click "Add Component" and type _CoinManager_. Then click "new script" --> "create and add". Open this new script.
+
+A nice effect would be gettings this coin to rotate. Take a moment and see if you can figure out how to do that(hint: referenec the RotatingObstacle)
+
+
+We can make this coin rotate in _Update_ with the following code:  
+```C#
+transform.Rotate(new Vector3(0, 0, 1) * speed * Time.deltaTime);
+```
+And we also need the speed variable, set to your desired value, at class level:  
+```C#
+[SerializeField] private float speed = 50f;
+```
+We need to add a trigger, but first lets add some management to the _GameManager_, so everything is managed in once place instead of across many coins. Save the current script, and switch over to _GameManager.cs_
+We don't need to add much, so I think it would be a good time for a mini challenge! Try and add a function _AddCoin_ that can be called from _CoinManager.cs_ that increases coin count and keeps it stored in _GameManager_ 
+
+<details><summary>Solution</summary>
+    
+    private int numberOfCoins = 0;
+    ...
+    public void AddCoin()
+    {
+        numberOfCoins++;
+    }
+
+</details>
+
+Save this, and we can head back to the _CoinManager_.
+
+In the CoinManager, add an _OnTriggerEnterFunction_. We want to call our new GameManager function, and also destroy the coin. Again, try this on your own first, and then see my solution:  
+
+<details><summary>Solution</summary>
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        GameManager gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gameManager.AddCoin();
+        Destroy(gameObject);
+    }
+</details>
+
+Now all that's left(basically) is to set the coin to be _Is Trigger_, and all the backend will be working! We can now add some UI to keep track of this visually.
+
+Also a helpful tip. If you are trying to test things like this, and don't want to play the level each time, you can move the player to a much more reasonable place to save time(and sometimes your keyboards)
+
+Under our _UI_ object, create a new _canvas_. You can all it something like _HUD_ or _display_ since we'll add a couple of things to it. Set the Canvas to "Scale with Screen Size" and set the reference resolution accordingly, preferablly to something like 1920x1080
+
+Now, add a TestMeshPro Text as a child to _HUD_, named _coins_. I am going to align this text in the _Rect Transform_ to the top right of the screen, but any place will do. In the Text field, input something like "Coins: 999". We probably won't get that many coins, but adding a couple extra characters helps ensure some good spacing. Feel free to change the font our sizing, but I like it as is.
+
+Now back to our _GameManager_ script, let's add a new filed to get a reference to the text. While we are at it, let's change the name of _canvas_ to _gameOverCanvas_, and change _canvasText_ to _gameOverText_. This way we keep better names and cleaner code. All of our serialized fields should look something likethis, and don't forget to change other variables in the script:  
+
+```C#
+    [SerializeField] private GameObject gameOverCanvas = null;
+    [SerializeField] private TMP_Text gameOverText = null;
+    [SerializeField] private TMP_Text coinText = null;
+    [SerializeField] private GameObject pauseCanvas = null;
+```
+
+In _AddCoin_, we can manipulate the coin text, adding a line after the increment line. This time, we'll use a special string formatter, so we can easily add the coin variable to the UI. (There is also normal string concatenation available).
+```C#
+coinText.text = $"Coins: {numberOfCoins}";
+```
+
+The "$" tells C# its a format string, and any variables can be placed in curly braces.
+We also want to add something in _Start_ to initialize the text:
+
+```C#
+coinText.text = $"Coins: {numberOfCoins}";
+```
+
+Save this file and return to Unity.
+
+Select the _Main Camera_ to access the _GameManger_, and hook up the new coin text, along with the GameOver text/canvas if that got disconnected in the name change.
+
+Now if you press play, and roll over to the coin, watch your UI update!  Woo-hoo! Instant feedback for players!
+
+Before we get into lives and checkpoints, feel free to duplicate the coin to any other platforms you added.
 
 ## Lives
 // UI for Lives  
