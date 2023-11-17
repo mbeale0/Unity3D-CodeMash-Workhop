@@ -6,6 +6,6 @@ public class BoundaryManager : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandleGameOver("You Lose!!!");
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().Respawn();
     }
 }
