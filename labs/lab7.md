@@ -99,9 +99,82 @@ Now if you press play, and roll over to the coin, watch your UI update!  Woo-hoo
 Before we get into lives and checkpoints, feel free to duplicate the coin to any other platforms you added.
 
 ## Lives
-// UI for Lives  
-// Logic  
-&ensp;&ensp;// Initial number of lives  
-&ensp;&ensp;// Adding of lives by number of coins  
-&ensp;&ensp;// hook up to UI  
-&ensp;&ensp;// spawning based on Lives  
+Since we already have it set up, let's quickly add some UI to our HUD for lives. Add a TextMeshPro Text object to the HUD canvas, and align it where you please. I will add mine to be underneath the coins, so I will align it to the upper right, and move it down a little.  
+![LivesUI](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/1507bd01-09d1-4714-a82b-1fac4f15b3c6)
+
+We can head over to the _GameManger_ script, and handle our lives there.
+
+First, we want to add a private variable(or you can serialize it if you want to change it between levels, for example), an int called _lives_. For now, I'll initialize it to _1_. We also want a serialized field for the UI tex
+```C#
+[SerializeField] private TMP_Text livesText = null;
+private int lives = 1;
+```
+Let's set the text in _Start_, just like we did with the coin text:
+```C#
+livesText.text = $"Lives: {lives}";
+```
+Then, in _AddCoin_, we can add a step to see if we want to increase the number of lives. For simplicity sake, as it is how many I have in my scene, I will increase lives every two coins. You could also reset the number of coins like they are "spent" by simply setting them to _0_, but I will leave them as it. Players may like to know their total collected. Since we aren't removing coins we have to use the modulus operator, to check if the number of coins is divisible by 0:
+```C#
+if(numberOfCoins % 2 == 0)
+{
+    lives++;
+    livesText.text = $"Lives: {lives}";
+}
+```
+
+Now comes a slightly more tricky part, really just in the fact that it involves some moving pieces, and that is the respawning. We could add what we need to the GameManger now, but I think it might be better to work iteratively, so let's headover to our Scripts folder, and create a new script called "CheckPointManager". Open this script.
+
+This will work almost identiacal to _FinishLineManager_, so we can actually copy the code from inside that class. We want checkpoints to also handle checking when the ball enters, and use the _GameManager_ to handle that.
+
+Remove the call to _HandleGameOver_, and replace it with:
+```C#
+SetCurrentCheckpoint(transform.position)
+```
+
+We'll create that function in just a second. This function call passes in a vector3, its position, which is where the ball will(almost) be spawned. Let's go add that function to the _GameManagerScript_, along with a private Vector3 to set it to:
+```C#
+private Vector3 checkpoint = Vector3.zero;
+...
+public void SetCurrentCheckpoint(Vector3 position)
+{
+    checkpoint = position;
+}
+```
+
+We also need a reference to start for when the player first starts, and on lives 0. There should also be a reference to the player so we can set his position.
+```C#
+[SerializeField] private Transform start = null;
+[SerializeField] private Transform player = null;
+```
+
+And a function to handle respawning:
+```C#
+ public void Respawn()
+ {
+     lives--;
+    livesText.text = $"Lives: {lives}";
+     if(lives < 0)
+     {
+         HandleGameOver("You lose!");
+     }
+     else
+     {
+         player.position = new Vector3(checkpoint.x, checkpoint.y + 5, checkpoint.z);
+     }
+ }
+```
+
+Two things to note on the respawn function:
+1. When lives are out, we want to reset the player but they need something to work with so we give them one life
+2. We check for lives < 0, because when a player has one life, they have more chance, at least in my mind 🙂 Feel free to take some leeway on that/
+
+Now all that is left to do is add the "respawn" function to whenever the player dies, and to hook up all the new fields. Go ahead and give this a try, then check out my solution.
+
+<details><summary>Solution</summary>
+In the boundary manager, we simply replace the function call with the call to respawn
+    
+    GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().Respawn();
+After that, we hook up "start", "player" and "lives text" to the GameManger, and add _CheckpointManager_ to the two checkpoints, and we're good to go!
+</details>
+
+Congrat! Your game is super solid. We can win and lose, have some actual challenges with obstacles, and an extra challenge with coins. I think it's time to add some polish and make things look better.
