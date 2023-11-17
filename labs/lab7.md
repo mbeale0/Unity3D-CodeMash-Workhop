@@ -1,4 +1,4 @@
-# Coin Pickups & Lives - WIP
+# Coin Pickups & Lives
 
 It's one thing to have a goal the player can aim for over and over again, but I think we should give them extra consequences in the form of lives.
 
@@ -177,4 +177,4 @@ In the boundary manager, we simply replace the function call with the call to re
 After that, we hook up "start", "player" and "lives text" to the GameManger, and add _CheckpointManager_ to the two checkpoints, and we're good to go!
 </details>
 
-Congrat! Your game is super solid. We can win and lose, have some actual challenges with obstacles, and an extra challenge with coins. I think it's time to add some polish and make things look better.
+Congrats! Your game is super solid. We can win and lose, have some actual challenges with obstacles, and an extra challenge with coins. I think it's time to add some polish and make things look better.
