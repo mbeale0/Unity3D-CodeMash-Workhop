@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            player.GetComponent<Rigidbody>().velocity = Vector3.zero;
             player.position = new Vector3(checkpoint.x, checkpoint.y + 5, checkpoint.z);
         }
     }
