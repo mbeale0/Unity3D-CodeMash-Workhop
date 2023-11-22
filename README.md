@@ -87,6 +87,7 @@ I would encourage you to keep learning and (hopefully) having fun with Unity, so
   - There are several good courses out there. I tend to like the ones at [gamedev.tv](https://www.gamedev.tv/courses/category/Unity)https://www.gamedev.tv/courses/category/Unity) (Note, _don't_ start with online multiplayer courses).
        - They are paid, but they go on sale quite a lot, Udemy.com also has a lot
   - Explore other areas of game dev to stretch your creative muscles, such as learning Blender, music or audio(gamedev.tv also has some Blender courses)
-  - Look into engine/backend/computer graphics if you wanna get technicak
+  - Look into engine/backend/computer graphics if you wanna get technical
+  - Also, the Unity Asset Store has _tons_ of great resources, such as models, UI, and even programs. They have many free things available as well, which help for quickly making your game look decent, especially if you just want to show off to friends(note, for commerical projects, check licensing!)
 
 There are many things you can do of course, but it really comes down to just doing _something_. Be careful of tutorial hell, but don't be afraid of tutorials either. Game dev involves a large variety of software and creative fields, so figure out what you like, and just enjoy yourself 🙂
