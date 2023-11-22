@@ -61,7 +61,7 @@ In the CoinManager, add an _OnTriggerEnterFunction_. We want to call our new Gam
     }
 </details>
 
-Now all that's left(basically) is to set the coin to be _Is Trigger_, and all the backend will be working! We can now add some UI to keep track of this visually.
+Now all that's left(basically) is to set the coin to be _Is Trigger_, and all the backend will be working! We can now add some UI to keep track of this visually. We can also move this new script to the Scripts folder.
 
 Also a helpful tip. If you are trying to test things like this, and don't want to play the level each time, you can move the player to a much more reasonable place to save time(and sometimes your keyboards)
 
@@ -104,7 +104,7 @@ Since we already have it set up, let's quickly add some UI to our HUD for lives.
 
 We can head over to the _GameManger_ script, and handle our lives there.
 
-First, we want to add a private variable(or you can serialize it if you want to change it between levels, for example), an int called _lives_. For now, I'll initialize it to _1_. We also want a serialized field for the UI tex
+First, we want to add a private variable(or you can serialize it if you want to change it between levels, for example), an int called _lives_. For now, I'll initialize it to _1_. We also want a serialized field for the UI text.  
 ```C#
 [SerializeField] private TMP_Text livesText = null;
 private int lives = 1;
@@ -131,7 +131,7 @@ Remove the call to _HandleGameOver_, and replace it with:
 SetCurrentCheckpoint(transform.position)
 ```
 
-We'll create that function in just a second. This function call passes in a vector3, its position, which is where the ball will(almost) be spawned. Let's go add that function to the _GameManagerScript_, along with a private Vector3 to set it to:
+We'll create that function in just a second. This function call passes in a vector3, its position, which is where the ball will(almost) be spawned. Let's go add that function to the _GameManagerScript_, along with a private Vector3 to reference it:
 ```C#
 private Vector3 checkpoint = Vector3.zero;
 ...
@@ -174,7 +174,7 @@ Now all that is left to do is add the "respawn" function to whenever the player 
 In the boundary manager, we simply replace the function call with the call to respawn
     
     GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().Respawn();
-After that, we hook up "start", "player" and "lives text" to the GameManger, and add _CheckpointManager_ to the two checkpoints, and we're good to go!
+After that, we hook up "start", "player" and "lives text" to the GameManger, and add _CheckpointManager_ to the two checkpoints along with start. We also need to add a box collider to start, that is trigger. I added  one with a scale of 5 all around, and moved it up a little bit. Now, we're good to go!
 </details>
 
 Congrats! Your game is super solid. We can win and lose, have some actual challenges with obstacles, and an extra challenge with coins. I think it's time to add some polish and make things look better.
