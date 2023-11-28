@@ -35,7 +35,20 @@ And let's take a look at their one for [metallic](https://docs.unity3d.com/Manua
 
 Those are the main settings that we care about for this training, but remember the "tiling" and "offset" ones, as those are used for what is essentially scaling textures.
 
-// Add simple material to platforms
+We will spend more time on improving our levels soon, but for now to demonstrate, I'll add a couple of quick materials and apply them.
+
+In the materials folder, right click to open the context menu, click "create", then "Material":  
+![CreateMaterial](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/ea226478-a87f-4bad-9fe1-fcb0a7fd3918)  
+
+Name this "Gray" (or "grey" if you insist 🙂)
+
+Keeping it simple for now, I'll just change the albedo by clicking on the white color bar and draging the center circle to the middle left area, where gray is. I can no click and drag this object into the scene. Any object I hover over, and then let go of my mouse on, will have this material applied. (note, be careful of the UI canvas, that can get in the way). I'm gonna add this gray material to my three main platforms and the two coin platforms.
+
+I'll also repeat this process, adding a new color, "yellow", which I will apply to my coins.
+
+And now, even with just a couple of simple materials, our level looks so much better, if nothing else because there is contrast between objects:  
+![SimpleColors](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/6b09c98f-4ea4-4242-8692-70ff8d38deeb)
+
 
 ## Skyboxes
 Skyboxes are the detail for the whole sky around the environment. With no floor, a full 360 degree skybox gives that fish bubble feeling found in simple mobile games. But skyboxes are used for day/night cycles, weather(visually) and overall providing an atmosphere. For our purposes, they are pretty straightforward. They also affect the lighting of the scene
