@@ -31,7 +31,7 @@ The next two we care about for this are right under albedo: metallic and smoothn
   Smoothness on the other hand is how smooth or rough the surface is. A metal sphere can have a rough or smooth surface and look quite different" - [source](https://forum.unity.com/threads/metallic-v-smoothness.524704/)
 
 Let's take a look at Unity's reference for smoothness, with a handy chart and other info [here](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html#:~:text=A%20range%20of%20smoothness%20values%20from%200%20to%201) 
-And let's take a look at their one for [metallic](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterMetallic.html#:~:text=a%20surface%20is.-,Metallic%20Property,-The%20Metallic%20Property)https://docs.unity3d.com/Manual/StandardShaderMaterialParameterMetallic.html#:~:text=a%20surface%20is.-,Metallic%20Property,-The%20Metallic%20Property
+And let's take a look at their one for [metallic](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterMetallic.html#:~:text=a%20surface%20is.-,Metallic%20Property,-The%20Metallic%20Property)
 
 Those are the main settings that we care about for this training, but remember the "tiling" and "offset" ones, as those are used for what is essentially scaling textures.
 
