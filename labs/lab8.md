@@ -51,14 +51,26 @@ And now, even with just a couple of simple materials, our level looks so much be
 
 
 ## Skyboxes
-Skyboxes are the detail for the whole sky around the environment. With no floor, a full 360 degree skybox gives that fish bubble feeling found in simple mobile games. But skyboxes are used for day/night cycles, weather(visually) and overall providing an atmosphere. For our purposes, they are pretty straightforward. They also affect the lighting of the scene
+Skyboxes are the detail for the whole sky around the environment. With no main floor or environment, a full 360 degree skybox can give that fish bubble feeling found in simple mobile games. But skyboxes are used for day/night cycles, weather(visually) and overall providing an atmosphere. For our purposes, they are just static, though they also can affect the lighting of the scene, though you can turn that off in the lighting settings.
 
-// Open lighting window  
-  // Go to env tab
-  // Change skybox
-  
+If you navigate to /Assets/SkyBoxes, you should see several skyboxes I got from the Unity Asset store. Similar to materials, you should get a quick idea of what they look like.
+
+For this asset pack, the ones starting with "6sided" will cover the entire environment. (The default one is not 6 sided). Though, regular ones still have some impact on the bottom half, just not as distinct. 
+
+I like the first one: "6sided Cosmic Cool Cloud". Go ahead and select one for now to get an idea, and we can try out more later. Much like materials, we can just drag them into the scene, except on the "void" and not any particular object. Whichever one you choose, be sure to select it in the project tab, so it is opened in the inspector. 6 sided skyboxed will have 6 textures. The regular kind will just look like a material.
+
+For both types, you have three main fields to add further customization: Tint, Exposure, and Rotation. These do pretty much what you expect. Tint changes the color output from teh skybox, which can dramatically change some of them(it doesn't simply add a tint, it overlays it very well). The exposure turns up the brightness, which affects the color of the scene as mentioned before. The rotation simply rotates the skybox. After quickly messing with those valuesm this is a peak of my scene:  
+![image](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/cca162b4-6cf1-4bf9-9607-597271c00eae)
+
 ## Lighting
-Like the other two, we won't be diving as deep as you can go with lighting, but I want to make sure you are at least somewhat familiar.
+As with everything else in Unity, you can go incredibly deep on just a couple things, and that is especially true with lighting, so we are just going to look at a couple different lighting sources, and the fields we can change.
 
-// settings on light in scene
+In the hieracrchy, expand the "Environment" object, and select "Directional light". I want us to look at the first 6 fields, and encourage you to look into it more later. Information below and for other fields from [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.2/manual/light-component.html#:~:text=The%20Indirect%20Multiplier%20defines%20the,light%20brighter%20with%20each%20bounce.)
+1. Type - 
+2. Color - 
+3. Mode - 
+4. Intensity - 
+5. Indirect Multiplier - 
+6. Shadow Type - 
+
 // baking light and why
