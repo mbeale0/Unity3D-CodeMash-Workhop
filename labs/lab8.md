@@ -1,4 +1,4 @@
-# Improving Our Level - Part One - WIP
+# Improving Our Level - Part One
 These next two labs will go hand in hand, both focusing on improving our level and hopefully making it feel a bit more like our own. Across both labs we will cover several different things, some not directly related, but enough that we could bundle it all together. I split it across to labs to just make it more manageable.
 
 I will also give some time after the next lab to let you all customize your levels, so feel free to just follow along right now, then go and explore
@@ -63,14 +63,28 @@ For both types, you have three main fields to add further customization: Tint, E
 ![image](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/cca162b4-6cf1-4bf9-9607-597271c00eae)
 
 ## Lighting
-As with everything else in Unity, you can go incredibly deep on just a couple things, and that is especially true with lighting, so we are just going to look at a couple different lighting sources, and the fields we can change.
+As with everything else in Unity, you can go incredibly deep on just a couple things, and that is especially true with lighting, so we are just going to look at a couple different lighting sources, and some main fields that we are more likely to change. This is a kind of info dump, so dont worry about remembering every detail 🙂 Feel free to refer back to this later.
 
 In the hieracrchy, expand the "Environment" object, and select "Directional light". I want us to look at the first 6 fields, and encourage you to look into it more later. Information below and for other fields from [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.2/manual/light-component.html#:~:text=The%20Indirect%20Multiplier%20defines%20the,light%20brighter%20with%20each%20bounce.)
-1. Type - 
-2. Color - 
-3. Mode - 
-4. Intensity - 
-5. Indirect Multiplier - 
-6. Shadow Type - 
+1. Type - "The current type of light. Possible values are Directional, Point, Spot and Area."
+     - Point Light, a Light that’s located at a point in the Scene and emits light in all directions equally
+     - Spot Light, a Light that’s located at a point in the Scene and emits light in a cone shape
+     - Directional Light, a Light that’s located infinitely far away and emits light in one direction only
+     - Area Light, a Light that’s defined by a rectangle or disc in the Scene, and emits light in all directions uniformly across its surface area but only from one side of the rectangle or disc
+3. Color - "Use the color picker to set the color of the emitted light"
+4. Mode - "Specify the Light Mode used to determine if and how a light is "baked". Possible modes are Realtime, Mixed and Baked."
+    - Baked: Unity pre-calculates the illumination from Baked Lights before runtime, and does not include them in any runtime lighting calculations.
+    - Realtime: Unity calculates and updates the lighting of Realtime Lights every frame at runtime. Unity does not precompute any calculations for Realtime Lights.
+    - Mixed: Unity performs some calculations for Mixed Lights in advance, and some calculations at runtime.
+5. Intensity - "Set the brightness of the light. The default value for a Directional light is 0.5. The default value for a Point, Spot or Area light is 1"
+6. Indirect Multiplier - "Use this value to vary the intensity of indirect light. Indirect light is light that has bounced from one object to another"
+7. Shadow Type - "Determine whether this Light casts Hard Shadows, Soft Shadows, or no shadows at all."
+    - "Hard shadows take the nearest shadow map pixel. Soft shadows average several shadow map pixels, resulting in smoother looking shadows. However, soft shadows are more expensive to render."   
 
-// baking light and why
+There are also a couple more standard fields for Spot lights(and one of them is also for point lights:
+1. Range(both point and spot) - "Define how far the light emitted from the center of the object travels"
+2. "Define the angle (in degrees) at the base of a spot light’s cone"
+
+It is also useful to know about the lighting tab, found in "Window" -> "Lighting" that contains a lot of useful fields and settings as well, which we will not be getting in to here.
+
+Alright, it's time to move on to "Improving Our Level", part two! We will look at adding some more obstacles, a timer, and some audio. Then you'll get some time to just work on your level! Let's get going! 
