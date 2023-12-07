@@ -84,6 +84,7 @@ Before starting, make sure you check out the "Start of Labs" branch
 ## Where to go next
 I would encourage you to keep learning and (hopefully) having fun with Unity, so I wanted to provide a few different things you can do next:
   - The biggest is to simply keep making games. Several small, yet complete, games are incredibly helpful for learning Unity. Even just for a hobbyist, it is really really good to start smaller(Even smaller than what you're thinking!
+    - Game Jams are a wonderful way to do this. There are tons of public online ones, some in person, or even do one solo or with a friend  
   - There are several good courses out there. I tend to like the ones at [gamedev.tv](https://www.gamedev.tv/courses/category/Unity)https://www.gamedev.tv/courses/category/Unity) (Note, _don't_ start with online multiplayer courses).
        - They are paid, but they go on sale quite a lot, Udemy.com also has a lot
   - Explore other areas of game dev to stretch your creative muscles, such as learning Blender, music or audio(gamedev.tv also has some Blender courses)
