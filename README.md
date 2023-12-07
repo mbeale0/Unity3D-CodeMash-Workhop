@@ -9,7 +9,7 @@ Follow all the steps below _**before starting the training**_ so you are prepare
 ## Pre-requisites:
 ### Previous knowledge
 - No knowledge of Unity needed
-- At least Object Oriented programming experience is highly recommended. We will be using basics such as but not limited to: functions, classes, conditionals, variables and loops.
+- At least some object oriented programming experience is highly recommended. We will be using basics such as but not limited to: functions, classes, conditionals, variables and loops.
 - Knoweledge of Git/GitHub is preferred, but not required
 ### Equipment
 You'll need a laptop(if attending in person) or desktop with Windows, Linux, or Mac installed
