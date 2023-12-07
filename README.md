@@ -32,6 +32,8 @@ You will also need something to edit the code. If you followed the above steps, 
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
  - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ### Cloning the project
+This repo contains a test project and a starter project for the training, so you need the files.
+
 With Git installed, you can clone the project.
  - https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
@@ -45,50 +47,3 @@ It should work just fine, but always good to make sure :)
 - Once on the game scene, click the "console" tab in the bottom of the window to view game results
 - Click the play button at the top of the editor
 - If you can play the game, you're all set!
-
-## Schedule
-Before starting, make sure you check out the "Start of Labs" branch
-
-1. Intro and Welcome
- 
-1. Presentation
-   
-1. [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
-
-1. [Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
-
-1. [Lab 3](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab3.md)
-
-1. [Lab 4](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab4.md)
-
-1. Break ~5 minutes
-
-1. [Lab 5](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab5.md)
-
-1. [Lab 6](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab6.md)
-
-1. Break ~ 10 minutes
-
-1. [Lab 7](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab7.md)
-
-1. [Lab 8](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab8.md)
-
-1. Break?
-
-1. [Lab 9](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab9.md)
-
-1. [Lab 10](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab10.md)
-
-1. Wrap-up
-
-## Where to go next
-I would encourage you to keep learning and (hopefully) having fun with Unity, so I wanted to provide a few different things you can do next:
-  - The biggest is to simply keep making games. Several small, yet complete, games are incredibly helpful for learning Unity. Even just for a hobbyist, it is really really good to start smaller(Even smaller than what you're thinking!
-    - Game Jams are a wonderful way to do this. There are tons of public online ones, some in person, or even do one solo or with a friend  
-  - There are several good courses out there. I tend to like the ones at [gamedev.tv](https://www.gamedev.tv/courses/category/Unity)https://www.gamedev.tv/courses/category/Unity) (Note, _don't_ start with online multiplayer courses).
-       - They are paid, but they go on sale quite a lot, Udemy.com also has a lot
-  - Explore other areas of game dev to stretch your creative muscles, such as learning Blender, music or audio(gamedev.tv also has some Blender courses)
-  - Look into engine/backend/computer graphics if you wanna get technical
-  - Also, the Unity Asset Store has _tons_ of great resources, such as models, UI, and even programs. They have many free things available as well, which help for quickly making your game look decent, especially if you just want to show off to friends(note, for commerical projects, check licensing!)
-
-There are many things you can do of course, but it really comes down to just doing _something_. Be careful of tutorial hell, but don't be afraid of tutorials either. Game dev involves a large variety of software and creative fields, so figure out what you like, and just enjoy yourself 🙂
