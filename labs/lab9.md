@@ -1,1 +1,0 @@
-# Coin pickups and lives
