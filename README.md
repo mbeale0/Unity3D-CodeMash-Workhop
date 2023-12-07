@@ -1,17 +1,22 @@
 # Intro to Unity 3D Game Development
-This is a soft intro to the Unity game engine. Follow along in the labs to fix, improve, and build on a simple roller ball game.
+Welcome to an intro to Unity 3D! Follow along in the labs to fix, improve, and build on a simple roller ball game.
 
-The game you will make is a simple one where the goal is to roll the ball to the end of the level, dodging obstacles along the way. Your
-goal in learning is not to dive super deep into a few places, but to get your toes wet in many aspects of game development in Unity, 
-giving you the knowledge to continue to learn and grow on your own.
+The game you will make is a simple one where the goal is to roll the ball to the end of the level, dodging obstacles along the way. This game may be simple
+but you will learn about and engage with many key aspects of game development including programming for obstacles, player controls, and more, UI, Collision, and building your game.
+
+Follow all the steps below _**before starting the training**_ so you are prepared and ready to dive in!
 
 ## Pre-requisites:
-### Previous Coding experience
-Prior knowledge of Unity is not required, however some general programming knowledge is preferred(things like conditionals, variables, loops, etc)
+### Previous knowledge
+- No knowledge of Unity needed
+- At least Object Oriented programming experience is highly recommended. We will be using basics such as but not limited to: functions, classes, conditionals, variables and loops.
+- Knoweledge of Git/GitHub is preferred, but not required
 ### Equipment
 You'll need a laptop(if attending in person) or desktop with Windows, Linux, or Mac installed
-- Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
-- For more in depth: https://www.cgdirector.com/unity-system-requirements/ (The minimum recommendations throughout are acceptable for this lab)
+- Unity can run decently well on most laptops, even if they are not super powerful, as long as they aren't already super slow even with things like browsing the internet, but especially for the game we will make, it is not super power intensive
+  - Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
+  - For more in depth and specifics about RAM, CPU, etc vist here: https://www.cgdirector.com/unity-system-requirements/
+    - One quote from that article worth mentioning: "It definitely doesn’t need the latest and greatest hardware, and you can run it just fine on anything released in the last 5 years" (and probably even a few more years than that for what we are doing, but better to be safe)
 
 It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
@@ -25,9 +30,13 @@ For builds to run on your local machine you can do that following. Windows can l
  - For Linux, to install Unity Hub: https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
  - For the purpose of this tutorial, Linux users can choose either mono or IL2CPP when choosing "Linux Build Support" in the modules
 ### IDE
-You will also need something to edit the code. If you followed the above steps, VS Community should be installed. You can also feel free to install VS Code or Jet brains Rider
+You will also need something to edit the code. If you followed the above steps, VS Community should be installed. You can also feel free to install VS Code or Jet brains Rider(free trial)
  - https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
  - The link also explains how to hook up the IDE to the editor, which can be done when testing your setup in a few moments
+
+Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for IDE information so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue 
+with Unity.
+
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
  - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
