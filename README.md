@@ -21,21 +21,14 @@ You'll need a laptop(if attending in person) or desktop with Windows, Linux, or 
 It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
 This will be done using Unity 2021.3.6. 
-Since this is the basics, any version should work, but it is better to have the same version. You can download it from here: [Unity Download](https://unity.com/releases/editor/archive) (Unity Hub recommended, but not needed)
- - Follow this video till the end for steps to install, starting at 2:19: https://youtu.be/Kh_FD0Ypdhg?t=139
- - This Method will also install an IDE, VS Community, which will be hooked up to Unity by default
- - In one lab we will build and upload a web build so in the modules make sure to include "WebGL Build Support"
-For builds to run on your local machine you can do that following. Windows can leave as default
- - For Mac users, you need to check "Mac Build Support (Mono)" and uncheck "Windows Build Support"
- - For Linux, to install Unity Hub: https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
- - For the purpose of this tutorial, Linux users can choose either mono or IL2CPP when choosing "Linux Build Support" in the modules
-### IDE
-You will also need something to edit the code. If you followed the above steps, VS Community should be installed. You can also feel free to install VS Code or Jet brains Rider(free trial)
- - https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
- - The link also explains how to hook up the IDE to the editor, which can be done when testing your setup in a few moments
+Since this is the basics, any version should work, but it is better to have the same version. Follow the instructions [here](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/installation.md) to install Unity.
 
-Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for IDE information so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue 
-with Unity.
+### IDE
+You will also need something to edit the code. If you followed the above steps, VS Community should be installed though you may want to double check it is hooked up, which the following link also explains how to do. You can also feel free to install VS Code or Jet brains Rider(free trial)
+ - https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
+ - You can hook up your IDE, or make sure it is hooked up, when testing the install throught the Rock Paper Scissors game here in a few minues
+
+Also worth noting, Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for that info, so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue with Unity.
 
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
@@ -48,7 +41,7 @@ With Git installed, you can clone the project.
 
 Or you can download as a ZIP
 ## How to test if it works
-It should work just fine, but always good to make sure :)
+It should work just fine, but always good to make sure :) Also a good time to make sure your IDE is hooked up
 - In the Unity Hub, at the top right of the window click "open"
 - Navigate to the directory where you cloned the project, and open "RockPaperScissors" in the main folder
 - Once Unity loads, if the game is not on the center screen click the "assets" tab in the bottom of the window next to "console"
