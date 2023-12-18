@@ -1,5 +1,5 @@
 # More Fun Level - Part 2 - WIP
-The last lab was more demoing some things to use here in a minute, and not as much about following along. This lab is still usedful for ideas and adding your own thing, but may be more helpful to follow along more 🙂
+The last lab was more demoing some things to use, and not as much about following along. This lab is still usedful for ideas and adding your own thing, but may be more helpful to follow along more 🙂
 
 ## A timer
 Let's go ahead and add a timer to our game. This is a relatively simple feature, but can really put on the pressure for more competitive players. Now a timer is not the hardest thing you can do in game dev, but it does require a couple steps.
@@ -60,9 +60,81 @@ timerText.text = $"{minutesText}:{secondsText}:{Mathf.Round(currentMilliseconds)
 We round the milliseconds as well to keep that format
 And finally, after saving this script, we hook up the text gameobject in the scene to the GameManager, and we are good to go!
 
-## Some more obstacles
 ## Some audio
-  // Audio is important!!  
-  // Start with music?  
+Audio is an extremely important aspect of any game, or even the lack of audio can and should be intentional choices, as it is a strong feature to influence player emotion. Even in a simple game like this, we can engage our players more with some music, and some simple sound effects than engage them more and make them want to play and do it well!
+
+Let's start with some easy audio, in adding some music. Music is pretty easy to add in unity, as for simple looping tracks, you just need to add a component to an object, called "Audio Source" and add your audio file. All you need to play an audio track in Unity is an Audio Source and an Audio Listener. You can have as many Audio Sources as you need/want, but only one Audio Listener(by default it is placed on the Camera)
+
+Since it is also the GameObject with our GameManager and music is a gamewide thing, let's add a new commponent to the camera, an Audio Source.  
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/9d4dd96f-1e87-41bb-ae1d-b0eed5c01dd5)  
+
+Let's break down a couple of the main fields. Find descriptions for others [here](https://docs.unity3d.com/ScriptReference/AudioSource.html#:~:text=state%0A%20%20%20%20%20%20%20%20%20%20%20%20m_ToggleChange%20%3D%20true%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D-,Properties,-bypassEffects)
+1. AudioClip - The clip you want to play, this can also be set in code to be more dynamic. In a minute, we'll add our music track to this
+2. Output - Used to set the mixer, which often would be sub mixers off the master volume, so you could add different sliders like "Music", "SFX"m or "Voice"
+3. Mute - Mutes the audio
+4. Play on awake - Decides if audio will start playing as soon as the game starts
+5. Loop - Loops the audio
+6. Priority - Based on number of available audio channels(up to 256) to decide which audiosource to use if needed
+7. Volume - Sets the volume
+8. Pitch - Sets the pitch so you can alter the sound slightly
+9. Spatial Blend - Used if you want to make the sound 2D(hearable from anywhere in scene) or 3D(hearable based on direction and postion)
+
+Once you add the AudioSource, navigate to Assets/Audio/ and find the "MainMusic" track. Drag that into the AudioClip field on the AudioSource. Also enable "Loop"
+
+Now, if you click play, you should hear the music start to play, and already it feels so much more alive! Though personally, I don't want the music to be overbearing so I am gonna lower the volume to about .3
+
+Next let's add a couple of sound effects that get trigger on certain events: Checkpoints, coin pickups, and finish line. Let's start with the coin. Also for a handy resource, I got all of these clips from freesound.org, which has tons of free audio, but be sure to check the licenses if you are doing anything for non hobby projects.
+
+Let's start with adding an audioclip to a checkpoint(reminder, if you wish to skip playing through the level each time, move your ball to an easier start)
+
+Open up "CheckPointManager.cs" so we can get started. Let's add an instance variable:
+```C#
+private AudioSource audioSource = null;
+```
+We will add an AudioSource component here in a minute. The script itself can't play the sound, so we get references to the AudioSource and manipulate that. That being said, let's get a reference to the AudioSource in the code, in _Start_:
+``` C#
+private void Start()
+{
+    audioSource = GetComponent<AudioSource>();
+}
+```
+In _OnTriggerEnter_ All we need to do is add the following code:
+``` C#
+audioSource.Play();
+```
+Note, `audioSource` has several helpful methods, inlcuding "PlayOneShot" which allows you to define the audio clip in code, and play multiple of them without looping over. You can also set the clip of `audioSource` with `audioSource.clip`.
+
+Techncally, once we add the AudioSource and Clip we would be good to go, but if the player rolls back over the checkpoint the audio would play again and again. Let's update our GameManger so we can check if its their current checkpoint.
+
+In _GameManager_, we just need to add the folllowing function:
+```C#
+public Vector3 GetCurrentcheckpoint()
+{
+    return checkpoint;
+}
+```
+Returning back to CheckpointManager, let's update this so it's a little more clear. We'll add an instace variable for GameManager, and set that in Start:
+``` C#
+private GameManager gameManager = null;
+...
+gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+```
+That makes the line setting the checkpoint much easier to read!
+
+Now all we need to do is only play the audio and set the checkpoint if it isn't the current checkpoint. It should be fairly simple, but give it a try yourself to make sure you're following along!
+
+<details><Summary>Answer</Summary>
+
+``` C#
+if(gameManager.GetCurrentcheckpoint() != transform.position)
+{
+    audioSource.Play();
+    gameManager.SetCurrentCheckpoint(transform.position);
+}
+```
+</details>
+
+Great! Now add an "AudioSource" to both checkpoints, along with the clip "Checkpoint" and then it should work!
+
 ## Work time!
 
