@@ -14,7 +14,7 @@ Follow all the steps below _**before starting the training**_ so you are prepare
 ### Equipment
 You'll need a laptop(if attending in person) or desktop with Windows, Linux, or Mac installed
 - Unity can run decently well on most laptops, even if they are not super powerful, as long as they aren't already super slow even with things like browsing the internet, but especially for the game we will make, it is not super power intensive
-  - Unity offical system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
+  - Unity official system requirements: https://docs.unity3d.com/Manual/system-requirements.html#editor
   - For more in depth and specifics about RAM, CPU, etc vist here: https://www.cgdirector.com/unity-system-requirements/
     - One quote from that article worth mentioning: "It definitely doesn’t need the latest and greatest hardware, and you can run it just fine on anything released in the last 5 years" (and probably even a few more years than that for what we are doing, but better to be safe)
 
