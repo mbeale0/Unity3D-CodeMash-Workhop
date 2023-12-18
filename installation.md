@@ -17,9 +17,9 @@ Perhaps the easiest way to install Unity is through the Hub, which effectivelly 
      ![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/3a47016d-c6de-4274-85f5-25b545e9fcf0)
       - More modules will increase installation time, so uninstall what you do not need(remember, you can easily install them later!)
 1. At this point, if you are installing VS community through the Hub, it should prompt you to install the needed things. If you already have it installed, open up the installed and select "modify" on the desired version, which will take you to the same screen as if you were installing through the Hub
-1. Scroll down to "Gaming" and check "Game Development with Unity"
+1. Scroll down to "Gaming" and check "Game Development with Unity"  
     ![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/12a77b60-036c-4cb8-8fef-27d7ac027862)
 
-1. On the right hand side, under "installation details" -> "Game development with Unity", you should see it is installing C#, along with other needed and optional things. We can uncheck "Unity Hub" since we already have that installed:
+1. On the right hand side, under "installation details" -> "Game development with Unity", you should see it is installing C#, along with other needed and optional things. We can uncheck "Unity Hub" since we already have that installed:  
   ![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/83d2490e-c3a7-4ac7-b233-9a0968adb3b3)
 1. Once that is installed you are good to go! Make sure to follow the IDE setup in the main ReadMe to hook up the IDE(Installing through the Unity Hub should link it up as well, but will be useful for other IDEs, and for a sanity check.
