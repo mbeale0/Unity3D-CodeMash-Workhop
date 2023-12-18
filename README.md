@@ -43,10 +43,12 @@ With Git installed, you can clone the project.
 Or you can download as a ZIP
 ## How to test if it works
 It should work just fine, but always good to make sure :) Also a good time to make sure your IDE is hooked up
-- In the Unity Hub, at the top right of the window click "open"
+- In the Unity Hub, at the top right of the window click "Add"
 - Navigate to the directory where you cloned the project, and open "RockPaperScissors" in the main folder
-- Once Unity loads, if the game is not on the center screen click the "assets" tab in the bottom of the window next to "console"
-- Double click to enter the "scenes" folder, then double click the "Main" scene
-- Once on the game scene, click the "console" tab in the bottom of the window to view game results
-- Click the play button at the top of the editor
+- In the middle of the "Projects" tab in the Hub, click "RockPaperScissors" to open the Unity project, and wait for the Editor to open(this might take a minute)
+- Once Unity loads in the middle window select the "Game" tab next to the "Scene" tab
+- If you see a blank screen on this game tab, open the the "assets" tab in the bottom of the window next to "console"
+- From the assets tab, double click to enter the "scenes" folder, then double click the "Main" scene to open that scene
+- Once on the proper game scene, click the "console" tab in the bottom of the window to view game results
+- Click the play button at the very top of the editor
 - If you can play the game, you're all set!
