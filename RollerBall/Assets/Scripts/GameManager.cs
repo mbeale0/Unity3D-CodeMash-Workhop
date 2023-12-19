@@ -79,6 +79,11 @@ public class GameManager : MonoBehaviour
     {
         checkpoint = position;
     }
+
+    public Vector3 GetCurrentcheckpoint()
+    {
+        return checkpoint;
+    }
     public void Respawn()
     {
         lives--;

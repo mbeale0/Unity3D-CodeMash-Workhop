@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class CheckPointManager : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private AudioSource audioSource = null;
+    private GameManager gameManager = null;
+    private void Start()
     {
-        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetCurrentCheckpoint(transform.position);
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        audioSource = GetComponent<AudioSource>();
+    }
+    private void OnTriggerEnter(Collider other)
+    {        
+        if(gameManager.GetCurrentcheckpoint() != transform.position)
+        {
+            //audioSource.Play();
+            Debug.Log("Why?");
+            gameManager.SetCurrentCheckpoint(transform.position);
+        }
     }
 }
