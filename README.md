@@ -27,9 +27,10 @@ This will be done using Unity 2021.3.6.
 Since this is the basics, any version should work, but it is better to have the same version. Follow the instructions [here](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/installation.md) to install Unity.
 
 ### IDE
-You will also need something to edit the code. If you followed the above steps, VS Community should be installed though you may want to double check it is hooked up, which the following link also explains how to do. You can also feel free to install VS Code or Jet brains Rider(free trial)
- - https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
- - You can hook up your IDE, or make sure it is hooked up, when testing the install throught the Rock Paper Scissors game here in a few minues
+You will also need something to edit the code. If you followed the above steps, VS Community should be installed though you may want to double check it is hooked up. You can also feel free to install VS Code or Jet brains Rider(free trial) instead. 
+ - VS community should be hooked up automatically, but it is never a bad idea to be sure
+ - You can hook up your IDE, or make sure it is hooked up, when testing the install throught the Rock Paper Scissors game here in a few minutes, once you have the Editor itself open
+ - Instructions on hooking up your IDE at this [link](https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider) 
 
 Also worth noting, Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for that info, so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue with Unity.
 
@@ -48,6 +49,7 @@ It should work just fine, but always good to make sure :) Also a good time to ma
 - In the Unity Hub, at the top right of the window click "Add"
 - Navigate to the directory where you cloned the project, and open "RockPaperScissors" in the main folder
 - In the middle of the "Projects" tab in the Hub, click "RockPaperScissors" to open the Unity project, and wait for the Editor to open(this might take a minute)
+  - The project you are loading is also where you can set up your IDE as mentioned above
 - Once Unity loads in the middle window select the "Game" tab next to the "Scene" tab
     - If you see this pop up:  
        ![SkipNewVersion](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/cc259896-784a-4fe8-b49b-357a206abcaf)
