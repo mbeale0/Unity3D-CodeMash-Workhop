@@ -59,3 +59,10 @@ It should work just fine, but always good to make sure :) Also a good time to ma
 - Once on the proper game scene, click the "console" tab in the bottom of the window to view game results
 - Click the play button at the very top of the editor
 - If you can play the game, you're all set!
+
+## Finishing Set-Up
+We also need to add the main project just like we did above, since there is a small amount of starter content for the actual workshop
+Just like before:
+   In the Unity Hub, at the top right of the window click "Add"
+- Navigate to the directory where you cloned the project, and open "RollerBall" in the main folder
+- You're all set! See you at the Kalahari!
