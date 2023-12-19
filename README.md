@@ -37,13 +37,18 @@ Also worth noting, Intellisense/compiler error warnings and such should be set u
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
  - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
 ### Cloning the project
 This repo contains a test project and a starter project for the training, so you need the files.
 
 With Git installed, you can clone the project.
  - https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+ - Or you can download as a ZIP
 
-Or you can download as a ZIP
+### Unity License
+You also need a license to use Unity, and for personal/hobby use, it will be free.
+Follow the steps at this link to get your personal license, it only only take a minute: [Instructions](https://support.unity.com/hc/en-us/articles/211438683-How-do-I-activate-my-license-#:~:text=Online%20activation%20steps%3A)
+
 ## How to test if it works
 It should work just fine, but always good to make sure :) Also a good time to make sure your IDE is hooked up
 - In the Unity Hub, at the top right of the window click "Add"
