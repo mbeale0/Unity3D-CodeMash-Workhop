@@ -1,4 +1,4 @@
-# More Fun Level - Part 2 - WIP
+# More Fun Level - Part 2
 The last lab was more demoing some things to use, and not as much about following along. This lab is still usedful for ideas and adding your own thing, but may be more helpful to follow along more 🙂
 
 ## A timer
