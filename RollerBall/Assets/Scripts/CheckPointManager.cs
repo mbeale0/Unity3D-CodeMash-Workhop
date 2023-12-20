@@ -15,8 +15,7 @@ public class CheckPointManager : MonoBehaviour
     {        
         if(gameManager.GetCurrentcheckpoint() != transform.position)
         {
-            //audioSource.Play();
-            Debug.Log("Why?");
+            audioSource.Play();
             gameManager.SetCurrentCheckpoint(transform.position);
         }
     }
