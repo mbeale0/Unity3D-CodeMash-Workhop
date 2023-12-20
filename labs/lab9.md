@@ -121,7 +121,7 @@ gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameM
 ```
 That makes the line setting the checkpoint much easier to read!
 
-Now all we need to do is only play the audio and set the checkpoint if it isn't the current checkpoint. It should be fairly simple, but give it a try yourself to make sure you're following along!
+Now all we need to do is only play the audio and set the checkpoint if it isn't the current checkpoint. It should be fairly simple, but try the code yourself to make sure you're following along!
 
 <details><Summary>Answer</Summary>
 
@@ -134,7 +134,26 @@ if(gameManager.GetCurrentcheckpoint() != transform.position)
 ```
 </details>
 
-Great! Now add an "AudioSource" to both checkpoints, along with the clip "Checkpoint" and then it should work!
+Great! Now add an "AudioSource" to all three checkpoints(including Start), along with the clip "Checkpoint" and then it should work!
+
+We can also do almost the exact same thing for the Finish Line, except using the "Finish" audio clip, and we don't need to check if its in the checkpoints. Go ahead and try it on your own!
+<details><Summary>Answer</Summary>
+
+``` C#
+private AudioSource audioSource = null;
+private void Start()
+{
+    audioSource = GetComponent<AudioSource>();
+}
+private void OnTriggerEnter(Collider other)
+{
+    audioSource.Play();
+    GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().HandleGameOver("You Win!!!");
+}
+```
+</details>
+
+Congrats! Now it is just time for the coin audio, which is just a little different.
 
 ## Work time!
 
