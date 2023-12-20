@@ -10,12 +10,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text coinText = null;
     [SerializeField] private GameObject pauseCanvas = null;
     [SerializeField] private TMP_Text livesText = null;
+    [SerializeField] private TMP_Text timerText = null;
     [SerializeField] private Transform start = null;
     [SerializeField] private Transform player = null;
 
     private int numberOfCoins = 0;
     private int lives = 1;
     private Vector3 checkpoint = Vector3.zero;
+    private int currentMinutes = 0;
+    private int currentSeconds = 0;
+    private float currentMilliseconds = 0;
 
     void Start()
     {
@@ -23,6 +27,28 @@ public class GameManager : MonoBehaviour
         pauseCanvas.SetActive(false);
         coinText.text = $"Coins: {numberOfCoins}";
         livesText.text = $"Lives: {lives}";
+        timerText.text = "00:00:00";
+    }
+
+    private void Update()
+    {
+        currentMilliseconds += Time.deltaTime * 100;
+
+        if(currentMilliseconds >= 100)
+        {
+            currentMilliseconds = 0;
+            currentSeconds++;
+        }
+        if (currentSeconds >= 60)
+        {
+            currentSeconds = 0;
+            currentMinutes++;
+        }
+
+        string minutesText = currentMinutes.ToString("D2");
+        string secondsText = currentSeconds.ToString("D2");
+
+        timerText.text = $"{minutesText}:{secondsText}:{Mathf.Round(currentMilliseconds)}";
     }
 
     public void HandleGameOver(string textToDisplay)
@@ -52,6 +78,11 @@ public class GameManager : MonoBehaviour
     public void SetCurrentCheckpoint(Vector3 position)
     {
         checkpoint = position;
+    }
+
+    public Vector3 GetCurrentcheckpoint()
+    {
+        return checkpoint;
     }
     public void Respawn()
     {
