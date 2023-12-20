@@ -153,7 +153,22 @@ private void OnTriggerEnter(Collider other)
 ```
 </details>
 
-Congrats! Now it is just time for the coin audio, which is just a little different.
+Congrats! Now it is just time for the coin audio, which is just a little different. It is actually only a couple lines, but because the coins get destroyed, we can't use their own audiosource, as that would get destroyed as well.
+
+We well use a different _AudioSource_ method called `PlayClipAtPoint` which actually spawns an instance of an AudioSource, and deletes it when the clip is done, which is great for pickups! Also to note, this technically plays a 3D sound, but since we are right where the _AudioSource_ will spawn, this isn't a big deal. Another option if you want 2D sound would be to create a prefab of an AudioSource, customize it to your liking, and instantiate that as an object.
+
+In CoinManager, we need to get a reference to the desired sound effect:
+``` C#
+[SerializeField] private AudioClip pickupSFX = null;
+```
+And then we just need to play it upon pickup:
+``` C#
+AudioSource.PlayClipAtPoint(pickupSFX, transform.position, 1);    
+```
+The three arguments are the clip, the location to spawn(in our case, where the coin was) and the volume, which I have set to one. Add the "CoinPickup" clip to the new field on your coins and we are good to go!
 
 ## Work time!
+Congrats! You have made an entire game that includes dying/winnin, challenge, extra features, UI and even audio! This is a great thing! I hope you at least added some of your own self as you were following along, but now is also the time.
+
+We have one more lab, where we will build and share our games, but right now, let's take about 20 minutes and all work on our games. Maybe experience with visuals through lighting or materials. Add challenge to the course through narrow paths or moving platforms the player has to get on, or maybe even new obstacles, like ones that try to smash the player or move in less random patters, or even better yet, think of a whole new feature or cool idea that wasn't even thought about in the training!
 
