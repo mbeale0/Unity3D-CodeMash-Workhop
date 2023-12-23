@@ -108,7 +108,7 @@ I think now would be a good time to add some minor complexity and have the camer
 
 Technically, you could drag the camera to be a child of the player, but then the camera would follow the ball totally - even in rotation. Which could maybe be fun in a rage game or something, which isn't quite what we are going for. So instead, we'll deal with this with a great power: CODE!
 
-In the scripts folder, create a new C# script called "Camera Follow"
+In the scripts folder, create a new C# script called "CameraFollow"
 
 First we need a couple of fields:
 ``` C#
