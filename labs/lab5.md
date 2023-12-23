@@ -203,7 +203,7 @@ We also need to add the tag to the Camera:
 
 ![AddTag](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/0a7dd5f6-9d77-4a06-bf07-c41b18fa7adc)
 
-After selecting "Add Tag" Press the plus button in the Tag dropdown, change the name to "GameManager" and hit save. Not switch back to the camera and actually add the tag. (use the same dropdown as we did to add a new tag, but choose our new tag instead). While on the camera, we also want to drag the Canvas and the text objects into the GameManager Script.
+After selecting "Add Tag" Press the plus button in the Tag dropdown, change the name to "GameManager" and hit save. Now switch back to the camera and actually add the tag. (use the same dropdown as we did to add a new tag, but choose our new tag instead). While on the camera, we also want to drag the Canvas and the text objects into the GameManager Script.
 
 For the last part, we need to hook the buttons up. We need the MenuController Script somewhere in the scene and since the Canvas holds the menu, that should be a good spot. Add the Script to the Canvas object.
 
