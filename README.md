@@ -18,6 +18,9 @@ You'll need a laptop(if attending in person) or desktop with Windows, Linux, or 
   - For more in depth and specifics about RAM, CPU, etc vist here: https://www.cgdirector.com/unity-system-requirements/
     - One quote from that article worth mentioning: "It definitely doesn’t need the latest and greatest hardware, and you can run it just fine on anything released in the last 5 years" (and probably even a few more years than that for what we are doing, but better to be safe)
 
+### Itch.io
+As long as there is time, the last lab will involve uploading a build of our game to Itch.io, so to save time, go ahead and register for a (free) account now: https://itch.io/register
+
 It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
 ### Unity
 This will be done using Unity 2021.3.6. 
