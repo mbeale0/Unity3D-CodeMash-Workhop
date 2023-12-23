@@ -15,34 +15,34 @@ First, the scenes of the game need to be added to the build settings so Unity kn
 Make sure "WebGL" is selected in the left column, and if you see "Switch Platform" at the bottom right, select that. This will take a minute.
 ![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/94182bf0-75ea-4c60-90e1-607061e686a0)
 
-Now in the same spot as where "Switch Platform" was, click "Build". Create a new folder to build the game in (it is often in the project folder, but it doesn't need to be. Make sure to add to .gitignore if using Git). Select your folder and the game will begin to build!
+Now in the same spot as where "Switch Platform" was, click "Build". Create a new folder called "Build", to build the game in (it is often in the project folder, but it doesn't need to be. Make sure to add to .gitignore if using Git and "Build" is in the project folder). Select your folder and the game will begin to build!
 
 ## Uploading To Itch.io
-While that is building, navigate to https://gamejolt.com, and sign up for an account. Feel free to skip the personalization stuff for now if you wish.
+While that is building, navigate to https://itch.io/game/new, and sign in if needed.
 
-Once you have an account, go to https://gamejolt.com/games, and at the top right, click "Add your Game":  
-![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/0acd0d47-aef1-48f9-9e4b-7f0e17f6fb82)  
+The process is very straightforward, but I have included some screenshots to help you as you go. First, make sure to set the title and kind of project, noted by the stars. Unless noted otherwise, you can leave everything else as defaults(but you are welcome to change what you want)  
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/19a4effc-0689-424a-9602-0727d946f220)  
+
+Let's skip uploading our game for now, to make sure they are all done building. We can set the viewport dimensions to 1920x1080(this may need experimented with) and enable the fullscreen option.
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/eaf0ed64-c7b6-4c9c-85ae-c0ad71c8eaf9)
+
+Finally, leave "Visibility and access" set to "Draft", and click save. It needs to be saved once to make it public
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/ee6df430-ba1f-4b6a-bcf5-31b67c6eb236)
 
 Choose either "Early Access" or "Complete", though it doesn't make a huge difference which you choose, it is really just for people browsing the store, and can be changed at any time. The Game page will not be published until later in the process, when you choose.
 
 Now we need to fill in the basic details(note a lot of this is pretty straightforward if you want to go on your own, and if you get stuck, wait till I get to that point). I unchecked "Add to Partner System" but truthfully that only matters for games making revenue.
 ![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/636a7b93-51b1-4843-aa72-4e208992b2a4)  
 
-Click "Save & Next"  
+On your game page, in the error, click "edit your project"
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/d1e6a701-c791-4192-8493-7ec2daf8033c)
 
-Add a description, I put:
-> A fun roller Ball game made during the CodeMash 2024 Conferencec!
+Now it is time to upload your build, assuming your project is done building. Compress the "Build" folder you built your game in to a standard zip folder in a location of your choosing(probably not your project folder).
 
-For the "Design" all you need is the thumbnail, but feel free to be more creative than me:  
-![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/09b303c1-ad95-4a0b-bebb-04daa53a1830)  
+Upload that zip folder where it says "Upload files" in your itch.io project edit view. Check "This file will be played in the browser"
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/24e62d15-bd9c-48e0-9360-c538417ab86b)  
 
-Now, "Packages" is the important part. I will leave mine as public and free. Towards the bottom, click "Add Package", then click "New Release"  
-
-GameJolt follows a MAJOR.MINOR.PATCH versioning system, and since our game is techincally done, I will make mine 1.0.0, but again this is really up to you, and really isn't a big deal for a game to share with friends if that's all you want to do.
-
-There are two options, "Downloadable" and "Browser" builds. We want a browser build, but we need to compress our Build folder into a zip file, so hopefully that is done building, and we can do that now. Name it whatever you wish, though I would zip it outside the project folder, since `.gitignore` probably won't catch that.
-
-Upload that zip folder to the "Browser Build Option", and once it is upload, select "Fit to Screen", the "Save Build". While that is processing, we can hit "Publish Release". Clicking "Next Step" we need to set the "Age Rating", which can probably be for "All Ages", and everything can be left as defaults. Once you save that, feel free to hit "Publish" to publish your game!! Though if it is still processing, that will take a moment to finish.
+Now just change the visibility to public, save your page and you are good to go!!
 
 ## Wrap Up
 Again, congratulations! Thanks for going through this course, I hope you enjoyed! I just have a few closing thoughts.
