@@ -1,4 +1,4 @@
-# Building our game and uploading to GameJolt
+# Building our game and uploading to Itch.io
 Congrats! You have made a complete and full game, which is something even many passionate game developers struggle with. Way to go!
 
 Of course, when we make a new project, its super fun to let other people play it, so let's actually build our game(so the person doesn't need Unity) and to make it even easier, we will upload it as a WebGL build to gamejolt so it will be super easy to share online, and free!
@@ -17,7 +17,7 @@ Make sure "WebGL" is selected in the left column, and if you see "Switch Platfor
 
 Now in the same spot as where "Switch Platform" was, click "Build". Create a new folder to build the game in (it is often in the project folder, but it doesn't need to be. Make sure to add to .gitignore if using Git). Select your folder and the game will begin to build!
 
-## Uploading To GameJolt
+## Uploading To Itch.io
 While that is building, navigate to https://gamejolt.com, and sign up for an account. Feel free to skip the personalization stuff for now if you wish.
 
 Once you have an account, go to https://gamejolt.com/games, and at the top right, click "Add your Game":  
