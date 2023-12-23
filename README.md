@@ -125,6 +125,8 @@ I would encourage you to keep learning and (hopefully) having fun with Unity, so
   - Look into engine/backend/computer graphics if you wanna get technical
   - Also, the Unity Asset Store has _tons_ of great resources, such as models, UI, and even programs. They have many free things available as well, which help for quickly making your game look decent, especially if you just want to show off to friends(note, for commerical projects, check licensing!)
 
+Here is also a handy [link](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/README.md#itchio) to a public _.gitignore_ which is great thing to have built for you!
+
 Also keep working on the game today, see what else you can expand on and make, and feel free to ping me  "@Mason Beale" on the CodeMash Discord if you need anything, and I'll do my best.
 
 There are many things you can do of course, but it really comes down to just doing _something_. Be careful of tutorial hell, but don't be afraid of tutorials either. Game dev involves a large variety of software and creative fields, so figure out what you like, and just enjoy yourself 🙂
