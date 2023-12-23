@@ -30,12 +30,15 @@ For builds to run on your local machine you can do that following. Windows can l
  - For Linux, to install Unity Hub: https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
  - For the purpose of this tutorial, Linux users can choose either mono or IL2CPP when choosing "Linux Build Support" in the modules
 ### IDE
-You will also need something to edit the code. If you followed the above steps, VS Community should be installed. You can also feel free to install VS Code or Jet brains Rider(free trial)
- - https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
- - The link also explains how to hook up the IDE to the editor, which can be done when testing your setup in a few moments
+You will also need something to edit the code. If you followed the above steps, VS Community should be installed, which is the _recommended_ IDE to use, as the process to install is much more streamlined and will include more autocomplete features out of the box. 
 
-Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for IDE information so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue 
-with Unity.
+You can also feel free to install VS Code or Jet brains Rider(free trial), though there may be extra steps involved
+ - Click this link for helpful install info: https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
+ - The link also explains how to hook up the IDE to the editor, which can be done when testing your setup in a few moments
+ - Follow this [video](https://code.visualstudio.com/docs/other/unity) to install and hook up VS Code. You will need to install SDKs, extensions, etc, so this is very **important** if you wish to use VS Code!
+ - Jet Brains is less common, and I have not used it before, so choose this at your own risk.
+
+It may be worth it to create a simple [C# "Hello World" program](https://www.programiz.com/csharp-programming/hello-world) to ensure code completion, intellisense, and general SDK is working. 
 
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
