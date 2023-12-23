@@ -22,17 +22,24 @@ You'll need a laptop(if attending in person) or desktop with Windows, Linux, or 
     - One quote from that article worth mentioning: "It definitely doesn’t need the latest and greatest hardware, and you can run it just fine on anything released in the last 5 years" (and probably even a few more years than that for what we are doing, but better to be safe)
 
 It would also be recommended to have a mouse instead of a touch pad, as that makes scene navigation easier(IMO)
+
+### Itch.io
+As long as there is time, the last lab will involve uploading a build of our game to Itch.io, so to save time, go ahead and register for a (free) account now: https://itch.io/register
+
 ### Unity
 This will be done using Unity 2021.3.6. 
 Since this is the basics, any version should work, but it is better to have the same version. Follow the instructions [here](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/installation.md) to install Unity.
 
 ### IDE
-You will also need something to edit the code. If you followed the above steps, VS Community should be installed though you may want to double check it is hooked up. You can also feel free to install VS Code or Jet brains Rider(free trial) instead. 
- - VS community should be hooked up automatically, but it is never a bad idea to be sure
- - You can hook up your IDE, or make sure it is hooked up, when testing the install throught the Rock Paper Scissors game here in a few minutes, once you have the Editor itself open
- - Instructions on hooking up your IDE at this [link](https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider) 
+You will also need something to edit the code. If you followed the above steps, VS Community should be installed, which is the _recommended_ IDE to use, as the process to install is much more streamlined and will include more autocomplete features out of the box. 
 
-Also worth noting, Intellisense/compiler error warnings and such should be set up automatically especially if using VS community, but I have had some issues with dotnet on Linux for that info, so it may be worth it to create a very simple "Hello world" dotnet program to see if you get things like intellisense and the red squiggles, as this is(usually) not a direct issue with Unity.
+You can also feel free to install VS Code or Jet brains Rider(free trial), though there may be extra steps involved
+ - Click this link for helpful install info: https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html#:~:text=Unity%20supports%20the%20following%20IDEs,JetBrains%20Rider
+ - The link also explains how to hook up the IDE to the editor, which can be done when testing your setup in a few moments
+ - Follow this [video](https://code.visualstudio.com/docs/other/unity) to install and hook up VS Code. You will need to install SDKs, extensions, etc, so this is very **important** if you wish to use VS Code!
+ - Jet Brains is less common, and I have not used it before, so choose this at your own risk.
+
+It may be worth it to create a simple [C# "Hello World" program](https://www.programiz.com/csharp-programming/hello-world) to ensure code completion, intellisense, and general SDK is working. 
 
 ### Git
 You can manage without Git but it is recommended to have it installed. If you clone using Git there will be progress branches to help stay on pace
