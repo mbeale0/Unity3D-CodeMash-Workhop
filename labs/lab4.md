@@ -38,7 +38,7 @@ Then your result should look as follows:
 _Note: you will only see the green lines(the collider), when selected on the object_
 
 ### The boundary code
-Go ahead and add a new component to the boundary, a new script called "BoundayManager"
+Go ahead and add a new component to the boundary, a new script called "BoundaryManager"
 
 Open this script and delete all the template code in the class. 
 
@@ -56,13 +56,16 @@ Once you're done with the script, make sure to move the script in the assets fol
 
 Awesome! The code is done. If you tried to test your code, and you may have noticed I "totally on purpose for learning purposes" forgot a step. If you happened to catch it and were able to fix it, great! If not, no worries. I'm teaching you this and I forgot.
 
-In order to actually check if there when an object enters a trigger, _there must actually be a trigger_. Select the boundary object, and under box collider, engable "Is Trigger"
+In order to actually check if there when an object enters a trigger, _there must actually be a trigger_. Select the boundary object, and under box collider, enable "Is Trigger"
 
 ![IsTrigger](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/19e0a5d4-b15d-4d2c-940f-078f04cee767)
 
 And tada, things magically work! Now it's time to try and push our players in the death zone.
 
 ## Some simple obstacles
+Now let's try and push the player into the boundary with some good old fashioned obstacles!
+
+## The first obstacle
 Our first object will be pretty straightforward, a rotating cube(or if you want to get technical, a rectangular prism, but that' a lot more to say)
 
 What's nice about an obstacle like this and the way we'll make it, as that it we will be able to adjust both the speed and size to allow multiple varieties all from one object.
@@ -100,6 +103,7 @@ A couple of things to note:
 
 Great! Now we have one obstacle that you can tweak to your liking, and even prefab to create variants of. Let's go ahead and add another one.
 
+## The second obstacle
 Follow the same process as earlier: create a new cube named "MovingObstacle", center it on the platform, though this time on the other side and set it to about 5 on the X value, and line it so it is perpendicular to the platform
    ![MovingObstacle](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/e370068f-e45c-4061-aee2-d43acca9c4ed)
    
@@ -123,7 +127,7 @@ private bool movingPositive = true;
 4. "startXPostion" will be the xPosition of the object which we will get in start
 5. "movingPositive" will keep track of the actual direction.
 
-You can acces the values of the transform using transform.position/scale/rotation.x/y/z. In this case, we want x for the position, though you may want "z" depending on your game orientation. Let's grab this, and the direction, in start:
+You can access the values of the transform using transform.position/scale/rotation.x/y/z. In this case, we want x for the position, though you may want "z" depending on your game orientation. Let's grab this, and the direction, in start:
 ``` C#
 startXPosition = transform.position.x;
 movingPositive = startMovePositive;
@@ -145,7 +149,7 @@ Now actually set the position based off our calculated value. We also need to us
 transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
 ```
 
-Save this script and go back to Unity. Make sure the obstacle is selected in the scene/heirarchy and click play. The range value will be a slider, you can slide that back and forth and watch your object move! Go to the min and mix, if it feels liks a good range great, if not adjust the _movementRange_ until you feel comfortable(Make sure to set it again after exiting playmode). While we are back in the editor, take this time to move the _MovingObjectManager_ and _RotatingObjectManager_ scripts into the scripts folder.
+Save this script and go back to Unity. Make sure the obstacle is selected in the scene/heirarchy and click play. The range value will be a slider, you can slide that back and forth and watch your object move! Go to the min and max, if it feels liks a good range great, if not adjust the _movementRange_ until you feel comfortable(Make sure to set it again after exiting playmode). While we are back in the editor, take this time to move the _MovingObjectManager_ and _RotatingObjectManager_ scripts into the scripts folder.
 
 Now, back in the script, let's get this thing going on it's own.
 We can use the following code:
@@ -158,7 +162,7 @@ else if(transform.position.x <= startXPosition - movementRange){
     movingPositive = true;
 }
 ```
-This will switch the directio flag if the object moves outside of it's range
+This will switch the direction flag if the object moves outside of it's range
 Then add:
 ``` C#
 if (movingPositive)
