@@ -110,14 +110,14 @@ This one is a bit more complex than the previous ones, so it may not all make se
 We need three serialized fields and two privates ones:
 ``` C#
 [Range(-1, 1)]
-[SerializeField] private float rangeOfMotion = 0f;
+[SerializeField] private float movementMultiplier = 0f;
 [SerializeField] private float movementRange = 7f;
 [SerializeField] private bool startMovePositive = true;
 
 private float startXPosition = 0f;
 private bool movingPositive = true;
 ```
-1. The "rangeOfMotion" will simply be a multipier to help restrict our obstacle, and something we can set during playmode to test things out. The "Range" attribute keeps it between the set values.
+1. The "movementMultiplier" will simply be a multipier to help restrict our obstacle, and something we can set during playmode to test things out. The "Range" attribute keeps it between the set values.
 2. "movementRange" is saying how many units can our object move each way, this can be adjusted along with a speed value if you add one to vary the obstacle
 3. "startMovePositive" is setting the starting direction, so we can again introduce some variability
 4. "startXPostion" will be the xPosition of the object which we will get in start
@@ -133,15 +133,17 @@ Next let's skip the actual auto movement for just a second so we can test this o
 ```C#
 float currentOffset = movementRange * movementMultiplier;
 ```
-This will get the units the cube should be moved relative to the offset and where the percetanage multiplier is at.
+That will get the units the cube should be moved relative to the offset and where the percetanage multiplier is at.
+
+Now set the new X (or Z if you choose something else) position by using our cached starting position:
 ```C#
-float currentOffset = movementRange * movementMultiplier;
+float newXPosition = startXPosition + currentOffset;
 ```
-Set the new position by using our cached starting position
+
+Now actually set the position based off our calculated value. We also need to use the transforms y and z values, since we cannot modify just the x coordinate.
 ```C#
 transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
 ```
-Now actually set the position based off our calculated value. We also need to use the transforms y and z values, since we cannot modify just the x coordinate.
 
 Save this script and go back to Unity. Make sure the obstacle is selected in the scene/heirarchy and click play. The range value will be a slider, you can slide that back and forth and watch your object move! Go to the min and mix, if it feels liks a good range great, if not adjust the _movementRange_ until you feel comfortable(Make sure to set it again after exiting playmode). While we are back in the editor, take this time to move the _MovingObjectManager_ and _RotatingObjectManager_ scripts into the scripts folder.
 
