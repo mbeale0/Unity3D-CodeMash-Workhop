@@ -8,7 +8,10 @@ Let's get started with the first step of that: creating a real level. (Our next 
 First things first, we don't want to waste our work from the first lab, so let's go ahead and create some object prefabs. This works very much like classes in OOP, where we can create the object in the scene, create a prefab from it, and reuse it as many times as we want, and even create prefab variants, or nested prfabs. 
 
 ### Clean up
-First, go ahead and navigate to the "project" tab and right click to open the context window. At the top of the window, hover over create, and in the new window, also at the top, select "Create Folder"
+First, go ahead and navigate to the "project" tab, and make sure you are at the root of the assets folder by clicking either of the two "assets" options:  
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/07458321-2dfc-4971-a8af-dfd811c9cd34)  
+
+Once there, right click in any open space in the Assets pane. At the top of that window, hover over create, and in the new window, also at the top, select "Create Folder"  
 ![CreateFolder](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/0c06554b-2da2-42b0-9c1f-461ee1399ee3)
 
 Name this folder "Prefabs". Go ahead and repeat this process, creating a folder called "Scripts". Now click and drag the FinisLine script into the Scripts folder. The asset tab can quickly become overwhelming, so it can be helpful to start organizing earlier.
@@ -17,7 +20,7 @@ Name this folder "Prefabs". Go ahead and repeat this process, creating a folder 
 The act of creating a prefab is actually very straight forward, it works much like moving files and folder around in the asset window. 
 In the heirarchy pane, click and drag the "Finish Line" object into the prefab folder. _Note how the object in the window turns blue, indicating it is a prefab_
 
-_Another quick note, there are a couple ways to edit prefabs. You can single click the object in the assets pane, and edit the components/details in the inspector. You can double click it to open the the object in isolation in the scene view, allowing you to modify the object in both the scene view and inspector. You can also modify the object based off the instantiated object in the inspector, by clicking the right chevron next to the listing, opening the asset in context(ie, still in the main scene view) or by right clicking, hovering over the prefab option, and clicking one of the options._
+Another quick note, there are a couple ways to edit prefabs. You can single click the object in the assets pane, and edit the components/details in the inspector. You can double click it to open the the object in isolation in the scene view, allowing you to modify the object in both the scene view and inspector. You can also modify the object based off the instantiated object in the inspector, by clicking the right chevron next to the listing, opening the asset in context(ie, still in the main scene view) or by right clicking, hovering over the prefab option, and clicking one of the options.
 
 Next go ahead and drag the "sphere" object into the folder as well. And boom! You have two prefabs you can reuse to your hearts desire.
 
