@@ -8,7 +8,7 @@ Follow all the steps below _**before starting the training**_ so you are prepare
 
 ## Pre-requisites:
 ***IMPORTANT: Installation can take a decent bit of time, so make sure everything is installed and ready to go ahead of time!!!***  
-If you need any help installing ping "@Mason Beale" in the CodeMash [Discord](https://discord.gg/RbZENJ8c73)
+If you need any help installing, ping "@Mason Beale" in the CodeMash [Discord](https://discord.gg/RbZENJ8c73)
 
 **Announcement:** If you cloned this repo _before_ 12/28/2023 noon, please clone again as some branches were updated.
 
