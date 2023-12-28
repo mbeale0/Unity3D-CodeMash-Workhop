@@ -10,6 +10,8 @@ Follow all the steps below _**before starting the training**_ so you are prepare
 ***IMPORTANT: Installation can take a decent bit of time, so make sure everything is installed and ready to go ahead of time!!!***  
 If you need any help installing ping "@Mason Beale" in the CodeMash [Discord](https://discord.gg/RbZENJ8c73)
 
+**Announcement:** If you cloned this repo _before_ 12/28/2023 noon, please clone again as some branches were updated.
+
 ### Previous knowledge
 - No knowledge of Unity needed
 - At least some object oriented programming experience is highly recommended. We will be using basics such as but not limited to: functions, classes, conditionals, variables and loops.
