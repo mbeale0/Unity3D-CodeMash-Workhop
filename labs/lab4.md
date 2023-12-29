@@ -149,7 +149,7 @@ Now actually set the position based off our calculated value. We also need to us
 transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
 ```
 
-Save this script and go back to Unity. Make sure the obstacle is selected in the scene/heirarchy and click play. The range value will be a slider, you can slide that back and forth and watch your object move! Go to the min and max, if it feels liks a good range great, if not adjust the _movementRange_ until you feel comfortable(Make sure to set it again after exiting playmode). While we are back in the editor, take this time to move the _MovingObjectManager_ and _RotatingObjectManager_ scripts into the scripts folder.
+Save this script and go back to Unity. Make sure the obstacle is selected in the scene/heirarchy and click play. The range value will be a slider, you can slide that back and forth and watch your object move! Go to the min and max, if it feels liks a good range great, if not adjust the _movementRange_ until you feel comfortable(Make sure to set it again after exiting playmode). While we are back in the editor, take this time to move the _MovingObjectManager_ and _RotatingObjectManager_ scripts into the scripts folder. It is good to keep things organized. This will redo the code structure in VS community, so it would be best to close the script in the IDE, and reopen it in Unity.
 
 Now, back in the script, let's get this thing going on it's own.
 We can use the following code:
