@@ -1,5 +1,5 @@
 # More Fun Level - Part 2
-The last lab was more demoing some things to use, and not as much about following along. This lab is still usedful for ideas and adding your own thing, but may be more helpful to follow along more 🙂
+The last lab was more demoing some things to use, and not as much about following along. This lab is still useful for ideas and adding your own thing, but may be more helpful to follow along more 🙂
 
 ## A timer
 Let's go ahead and add a timer to our game. This is a relatively simple feature, but can really put on the pressure for more competitive players. Now a timer is not the hardest thing you can do in game dev, but it does require a couple steps.
