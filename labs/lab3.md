@@ -57,6 +57,10 @@ private int MoveZ = 0;
 ```
 These will be how we keep track of the direction. We will use it to choose three states each, and set the actual velocity. For example, depending on your orientation, MoveX will be for W and S. 1 would represent forward, -1 would be backward and 0 would be stopped.
 Now fill in the rest of the Input handlers(make sure to replace the check for "W" as well)
+
+___Important___: The way you built your level will effect values for MoveX, and moveY, such as negative vs positive. We can use the Z and X axis(blue and red) along with the direction of the camera(eg, the camera gives us a side view right now) to help determine this. For example, in the below picture, the forward direction of my ball falls in line with the direction of X, so the "W" key would be on the x axis. The positive direction of the arrow is how we want to move forward. "W" is forward, so "W" is positive. That means "S" will be on the X axis as well, but negative, since it is going backwards. Similarlly, my Z axis is going to the left, so "A" and "D" will be on the Z axis. A will use MoveZ, being postivie, while D is MoveZ and negative. Use your own axes to determine the correct positon.
+    
+![Ballorientation](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/cfc1d81b-f7b7-4805-846f-5b5e341b62c6)
 ``` C#
 if (Input.GetKey(KeyCode.W))
 {
@@ -85,10 +89,6 @@ else
 ```
 This is broken out into two parts: left/right and forward/backward, each also having an "else" to reset, as we want the player to move left and forward at the sime time, but not forward and backward. 
 
-___Important: which values have MoveX or MoveY and which are positive are negative will depend on your balls orientation. We can use the Z and X axis(blue and red) along with the direction of the camera to determine this. For example, in the below picture, the forward direction of my ball falls in line with the direction of X, so W would be on the x axis, and since X is also going forward, W is positive. That means S will be on the X as well, but negative. Similarlly, my z axis is going to the left, so A and D will be MoveZ and A will me positve, while D is negative___
-    
-![Ballorientation](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/cfc1d81b-f7b7-4805-846f-5b5e341b62c6)
-
 Finally add this function with the code inside:
 ``` C#
 private void FixedUpdate()
@@ -104,7 +104,7 @@ _Note: changing a serializefield variable in code after already being compiled o
 Save your file, and switch back to Unity. Click play and look at that ball go. Woo-Hoooo!
 
 ## Camera follow
-I think now would be a good time to add some minor complexity and have the camera follow the ball. We will have to re-figure out our movex/movey values but I think it was worth it to start simple.
+I think now would be a good time to add some minor complexity and have the camera follow the ball. We will have to re-figure out our MoveX/MoveY values but I think it was worth it to start simple.
 
 Technically, you could drag the camera to be a child of the player, but then the camera would follow the ball totally - even in rotation. Which could maybe be fun in a rage game or something, which isn't quite what we are going for. So instead, we'll deal with this with a great power: CODE!
 
@@ -138,7 +138,7 @@ Save your file and switch back to Unity. Add our new script to the Main Camera b
 
 If you click play as is, watch your camera move with the ball! Things are feeling so dynamic and fast paced now! You can leave it as is if you'd like, but I'd prefer to orient the camera with my forward movement.
 
-Like we did in the first lab, navigate in the scene to be behind the ball where feels right to you. Then once you're happy(or moderately okay), right click the camera object and select "align with view". If you click play, you'' notice the camera moves but the ball now goes the wrong direction. We need to adjust our MoveX/MoveZ values. Using the suggestions about looking at the X and Z axes, try and fix this new bug yourself, and playtest it to see if it works. If you can't get it to work, take a look at what I changed:
+Like we did in the first lab, navigate in the scene to be behind the ball where feels right to you. Then once you're happy(or moderately okay), right click the camera object and select "align with view". If you click play, you'' notice the camera moves but the ball now goes the wrong direction. We need to adjust our MoveX/MoveZ values. Using the suggestions about looking at the X and Z axes, try and fix this new bug yourself, and playtest it to see if it works, it doesn't require a lot of changes/ If you can't get it to work, take a look at what I changed:
 
 <details><summary> Click here to see the code</summary>
     
