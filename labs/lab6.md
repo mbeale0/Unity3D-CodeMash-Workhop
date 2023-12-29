@@ -65,8 +65,8 @@ Let's first off remove the Menu Controller from both Canvases, and create a new 
 
 Now let's rehook up all the buttons.
 
-On the normal canvas, expand it so you can access "QuitButton" and "RestartButton". Drag "UI" into their on click methods, and in the "No Function" drop down select the correct method.
+On the normal canvas, expand it so you can access "QuitButton" and "RestartButton". Drag "UI" into their _OnClick_ methods, and in the "No Function" drop down select the correct method. Do the same thing for the pause canvas.
 
-Now do the same thing for the pause canvas, and finally hook up the Pause Canvas in the Game Manager Script we added to the camera.
+Finally, reselect the camera. Make sure both the Pause Canvas and Main Canvas are added to their respective fields for the GameManager component.
 
 Make sure to save your scene. Play test the game and revel in the fact you can now control time at your will!
