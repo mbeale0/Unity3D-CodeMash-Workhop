@@ -20,9 +20,11 @@ Now do the same thing but for the enviroment objects: Finish line, lightning, st
 
 Okay, I don't know about you, but I feel better now. \*phew\*
 
-Time to get back to our UI. Select your Canvas and find the "Canvas Scaler" component.  For the "UI Scale Mode" field, select the drop down and choose "Scale with Screen size". Under referecnce resolution, you can put "1920" in the x and "1080" in the y. This allows the Canvas to dynamically scale based on our set resolution. 1080p works well since it is a fairly common resolution and somewhat in the middle. It doesn't mean you don't ever have to test different resolutions/ratios, but it is a quick change that makes a big difference.
+Time to get back to our UI. Select your Canvas and find the "Canvas Scaler" component.  For the "UI Scale Mode" field, select the drop down and choose "Scale with Screen size". Under referecnce resolution, you can put "1920" in the x and "1080" in the y. Also drag the "Match" slider to be .5, so it matches both width and height. The purpose of this(combined with anchoring UI as we will do in a minute) allows the UI of our game to be consistent in sizing/scaling even in different resolutions and aspect rations. 
 
-![CanvasScaler](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/c339e08f-eb24-487d-9116-5dbdca0ec058)
+We set a 1920x1080 reference here, since that is a pretty standard/common resolution. Once we add some buttons and text, switch to the game view and set the resolution right under "Game" to something other than free aspect. You can then adjust the game window size to see the way the UI is affected and how it stays the same.This doesn't mean you don't ever have to test different resolutions/ratios, but it is a quick change that makes a big difference. Also, In preparing the images I made some wrong values, so double check your text and things later in this labs and that their sizes and postions make sense.
+
+![image](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/assets/74221606/81dc5c89-1c0d-4c94-a37d-558984c1187f)
 
 Note that a Canvas also uses a Rect Transform instead of a regular transform. A rect transform represent a whole rectangle for UI, while a transform represents a single point.
 
@@ -93,7 +95,7 @@ It looks good, but let's add something we can give functionality too, in the for
 
 Add a button just like we added the font. Right click on Canvas -> UI -> Button - TextMeshPro. Name this button "QuitButton".
 
-Feel free to add anothe custom font to this by selecting the dropdown arrow in the inspector next to the object in the inspector and selecting the child text objext. You can change the font in the exact same way as before, by clicking the bullseye next to "Font Asset". While changing the font, let's change the text to "QUIT". We can also enabkle the "Auto Size" field of Font Style.
+Feel free to add another custom font to this by selecting the dropdown arrow in the inspector next to the object in the inspector and selecting the child text objext. You can change the font in the exact same way as before, by clicking the bullseye next to "Font Asset". While changing the font, let's change the text to "QUIT". We can also enabkle the "Auto Size" field of Font Style.
 
 Reselect the actual button object, and let's align it to the bottom right of the screen. We can do this by clicking the Rect Transform anchor widget -> holding ALT -> clicking square aligned with bottom right.
 
@@ -105,7 +107,7 @@ You can align/size your button as you see fit, but I am gonna move mine to be ju
 
 Let's add one more customization to this screen by getting rid of the basic Unity button image. Much like the fonts, I loaded some in already in /Assets/Icons/. There are some extra things there, so look around fo the ones you want. I am going to get mine from simpleUI&Icons/button/button_login.
 
-For some of these, they won't work right off the bat. We have to conver them from a simple image to a 2D Sprint. Select the button you want and the image editor will open in the inspector. Texture Type needs to be "Sprite (2D & UI)", then click apply in the bottom right.
+For some of these, they won't work right off the bat. We have to convert them from a simple image to a 2D Sprite. Select the button you want and the image editor will open in the inspector. Texture Type needs to be "Sprite (2D & UI)", then click apply in the bottom right.
 
 ![SpriteCreator](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/a7a61668-79a2-4f4e-826e-58afb8ac7068)
 
@@ -137,6 +139,7 @@ public void OnRestart()
     SceneManager.LoadScene("Level1");
 }
 ```
+If not added automatically, make sure `using UnityEngine.SceneManagement;` is added to the top of the script.
 
 Similary, create a function called OnQuit() with the line "Application.Quit();"
 
@@ -203,7 +206,7 @@ We also need to add the tag to the Camera:
 
 ![AddTag](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/0a7dd5f6-9d77-4a06-bf07-c41b18fa7adc)
 
-After selecting "Add Tag" Press the plus button in the Tag dropdown, change the name to "GameManager" and hit save. Now switch back to the camera and actually add the tag. (use the same dropdown as we did to add a new tag, but choose our new tag instead). While on the camera, we also want to drag the Canvas and the text objects into the GameManager Script.
+After selecting "Add Tag", press the plus button in the Tag dropdown, change the name to "GameManager" and hit save. Now select to the camera again in the heiracrhy to actually add the tag. Use the same dropdown as we did to add a new tag, but choose our new tag instead of adding a new one. While selected on the camera, we also want to drag the Canvas object and the text object into the GameManager Script fields located in the Inspector on the camera.
 
 For the last part, we need to hook the buttons up. We need the MenuController Script somewhere in the scene and since the Canvas holds the menu, that should be a good spot. Add the Script to the Canvas object.
 
