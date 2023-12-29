@@ -69,7 +69,7 @@ Under our _UI_ object, create a new _canvas_. You can all it something like _HUD
 
 Now, add a TestMeshPro Text as a child to _HUD_, named _coins_. I am going to align this text in the _Rect Transform_ to the top right of the screen, but any place will do. In the Text field, input something like "Coins: 999". We probably won't get that many coins, but adding a couple extra characters helps ensure some good spacing. Feel free to change the font our sizing, but I like it as is.
 
-Now back to our _GameManager_ script, let's add a new filed to get a reference to the text. While we are at it, let's change the name of _canvas_ to _gameOverCanvas_, and change _canvasText_ to _gameOverText_. This way we keep better names and cleaner code. All of our serialized fields should look something likethis, and don't forget to change other variables in the script:  
+Now back to our _GameManager_ script, let's add a new field se we can get a reference to the text. While we are at it, let's change the name of _canvas_ to _gameOverCanvas_, and change _canvasText_ to _gameOverText_. This way we keep better names and cleaner code. All of our serialized fields should look something likethis, and don't forget to change other variables in the script:  
 
 ```C#
     [SerializeField] private GameObject gameOverCanvas = null;
@@ -92,7 +92,7 @@ coinText.text = $"Coins: {numberOfCoins}";
 
 Save this file and return to Unity.
 
-Select the _Main Camera_ to access the _GameManger_, and hook up the new coin text, along with the GameOver text/canvas if that got disconnected in the name change.
+Select the _Main Camera_ to access the _GameManager_, and hook up the new coin text, along with the GameOver text/canvas if that got disconnected in the name change.
 
 Now if you press play, and roll over to the coin, watch your UI update!  Woo-hoo! Instant feedback for players!
 
@@ -102,7 +102,7 @@ Before we get into lives and checkpoints, feel free to duplicate the coin to any
 Since we already have it set up, let's quickly add some UI to our HUD for lives. Add a TextMeshPro Text object to the HUD canvas, and align it where you please. I will add mine to be underneath the coins, so I will align it to the upper right, and move it down a little.  
 ![LivesUI](https://github.com/mbeale0/Unity-Intro-Project/assets/74221606/1507bd01-09d1-4714-a82b-1fac4f15b3c6)
 
-We can head over to the _GameManger_ script, and handle our lives there.
+We can head over to the _GameManager_ script, and handle our lives there.
 
 First, we want to add a private variable(or you can serialize it if you want to change it between levels, for example), an int called _lives_. For now, I'll initialize it to _1_. We also want a serialized field for the UI text.  
 ```C#
@@ -122,7 +122,7 @@ if(numberOfCoins % 2 == 0)
 }
 ```
 
-Now comes a slightly more tricky part, really just in the fact that it involves some moving pieces, and that is the respawning. We could add what we need to the GameManger now, but I think it might be better to work iteratively, so let's headover to our Scripts folder, and create a new script called "CheckPointManager". Open this script.
+Now comes a slightly more tricky part, really just in the fact that it involves some moving pieces, and that is the respawning. We could add what we need to the GameManager now, but I think it might be better to work iteratively, so let's headover to our Scripts folder, and create a new script called "CheckPointManager". Open this script.
 
 This will work almost identiacal to _FinishLineManager_, so we can actually copy the code from inside that class. We want checkpoints to also handle checking when the ball enters, and use the _GameManager_ to handle that.
 
@@ -174,7 +174,7 @@ Now all that is left to do is add the "respawn" function to whenever the player 
 In the boundary manager, we simply replace the function call with the call to respawn
     
     GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().Respawn();
-After that, we hook up "start", "player" and "lives text" to the GameManger, and add _CheckpointManager_ to the two checkpoints along with start. We also need to add a box collider to start, that is trigger. I added  one with a scale of 5 all around, and moved it up a little bit. Now, we're good to go!
+After that, we hook up "start", "player" and "lives text" to the GameManager, and add _CheckpointManager_ to the two checkpoints along with start. We also need to add a box collider to start, that is trigger. I added  one with a scale of 5 all around, and moved it up a little bit. Now, we're good to go!
 </details>
 
 Congrats! Your game is super solid. We can win and lose, have some actual challenges with obstacles, and an extra challenge with coins. I think it's time to add some polish and make things look better.
