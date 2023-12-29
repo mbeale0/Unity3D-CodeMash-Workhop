@@ -29,7 +29,9 @@ In the search bar that appears, type in "rigidbody" and select the option that c
 ## Adding a simple finish line
 Of course as fun as watching the infinite falling ball is, that's not really great for a final game. Let's dive a little into the Unity scene editor to add a simple finish line.
 
-In the top left of the screen, find the "GameObject" tab. This allows us to quickly add default Unity objects to our scenes, such as primitives(basic shapes), Cameras, UI, and more.
+First, let's experiment really quick. Hit play, and let the ball roll for a second before hitting the pause menu. Hit "Ctrl-S" to try and save the scene. You will get an error saying you must exit the game to save. In other words, you can't save scene objects while in play mode. This includes fields in the inspector (if you try and save after experimenting with these fields, they will be reset back to their normal).
+
+Now, in the top left of the editor, find the "GameObject" button, in the same area as "File", "Edit", etc. This allows us to quickly add default Unity objects to our scenes, such as primitives(basic shapes), Cameras, UI, and more.
 
 Go ahead and click that tab, select "Shapes" -> "3D Cube". Once you click that you should see a new cube labeled "Cube (1)" pop up in the hierarchy and Inspector, and you should notice a new white cube in the scene view.
 
