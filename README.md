@@ -29,7 +29,7 @@ It would also be recommended to have a mouse instead of a touch pad, as that mak
 As long as there is time, the last lab will involve uploading a build of our game to Itch.io, so to save time, go ahead and register for a (free) account now: https://itch.io/register
 
 ### Unity
-This will be done using Unity 2021.3.6. 
+This will be done using Unity 2021.3.6. You will have to create an account with Unity, just follow the prompts when they appear.
 Since this is the basics, any version should work, but it is better to have the same version. Follow the instructions [here](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/installation.md) to install Unity.
 
 ### IDE
