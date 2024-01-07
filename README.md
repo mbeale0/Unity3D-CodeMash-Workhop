@@ -8,7 +8,7 @@ Follow all the steps below _**before starting the training**_ so you are prepare
 
 ## Pre-requisites:
 ***IMPORTANT: Installation can take a decent bit of time, so make sure everything is installed and ready to go ahead of time!!!***  
-If you need any help installing ping "@Mason Beale" in the CodeMash [Discord](https://discord.gg/RbZENJ8c73)
+If you need any help installing, ping "@Mason Beale" in the CodeMash [Discord](https://discord.gg/RbZENJ8c73)
 
 **Announcement:** If you cloned this repo _before_ 12/28/2023 noon, please clone again as some branches were updated.
 
@@ -29,7 +29,7 @@ It would also be recommended to have a mouse instead of a touch pad, as that mak
 As long as there is time, the last lab will involve uploading a build of our game to Itch.io, so to save time, go ahead and register for a (free) account now: https://itch.io/register
 
 ### Unity
-This will be done using Unity 2021.3.6. 
+This will be done using Unity 2021.3.6. You will have to create an account with Unity, just follow the prompts when they appear.
 Since this is the basics, any version should work, but it is better to have the same version. Follow the instructions [here](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/installation.md) to install Unity.
 
 ### IDE
@@ -80,3 +80,54 @@ Just like before:
    In the Unity Hub, at the top right of the window click "Add"
 - Navigate to the directory where you cloned the project, and open "RollerBall" in the main folder
 - You're all set! See you at the Kalahari!
+
+## Tentative Schedule
+Before starting, make sure you are on the master branch branch. Below is a tentative schedule, which will likely change slightly as time allows
+
+1. Intro and Welcome
+ 
+1. Presentation
+   
+1. [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
+
+1. [Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
+
+1. 1. Break ~5 minutes
+
+1. [Lab 3](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab3.md)
+
+1. [Lab 4](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab4.md)
+
+1. [Lab 5](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab5.md)
+
+1. 1. Break ~ 10 minutes
+
+1. [Lab 6](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab6.md)
+
+1. [Lab 7](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab7.md)
+
+1. [Lab 8](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab8.md)
+
+1. Break ~ 5 Minutes
+
+1. [Lab 9](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab9.md)
+
+1. [Lab 10](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab10.md)
+
+1. Wrap-up
+
+## Where to go next
+I would encourage you to keep learning and (hopefully) having fun with Unity, so I wanted to provide a few different things you can do next:
+  - The biggest is to simply keep making games. Several small, yet complete, games are incredibly helpful for learning Unity. Even just for a hobbyist, it is really really good to start smaller(Even smaller than what you're thinking!
+    - Game Jams are a wonderful way to do this. There are tons of public online ones, some in person, or even do one solo or with a friend  
+  - There are several good courses out there. I tend to like the ones at [gamedev.tv](https://www.gamedev.tv/courses/category/Unity)https://www.gamedev.tv/courses/category/Unity) (Note, _don't_ start with online multiplayer courses).
+       - They are paid, but they go on sale quite a lot, Udemy.com also has a lot
+  - Explore other areas of game dev to stretch your creative muscles, such as learning Blender, music or audio(gamedev.tv also has some Blender courses)
+  - Look into engine/backend/computer graphics if you wanna get technical
+  - Also, the Unity Asset Store has _tons_ of great resources, such as models, UI, and even programs. They have many free things available as well, which help for quickly making your game look decent, especially if you just want to show off to friends(note, for commerical projects, check licensing!)
+
+Here is also a handy [link](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/README.md#itchio) to a public _.gitignore_ which is great thing to have built for you!
+
+Also keep working on the game today, see what else you can expand on and make, and feel free to ping me  "@Mason Beale" on the CodeMash Discord if you need anything, and I'll do my best.
+
+There are many things you can do of course, but it really comes down to just doing _something_. Be careful of tutorial hell, but don't be afraid of tutorials either. Game dev involves a large variety of software and creative fields, so figure out what you like, and just enjoy yourself 🙂
