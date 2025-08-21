@@ -88,31 +88,31 @@ Before starting, make sure you are on the master branch branch. Below is a tenta
  
 1. Presentation
    
-1. [Lab 1](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab1.md)
+1. [Lab 1](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab1.md)
 
-1. [Lab 2](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab2.md)
+1. [Lab 2](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab2.md)
 
 1. 1. Break ~5 minutes
 
-1. [Lab 3](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab3.md)
+1. [Lab 3](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab3.md)
 
-1. [Lab 4](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab4.md)
+1. [Lab 4](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab4.md)
 
-1. [Lab 5](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab5.md)
+1. [Lab 5](https://github.com/mbeale0//Unity3D-CodeMash-Workhopblob/master/labs/lab5.md)
 
 1. 1. Break ~ 10 minutes
 
-1. [Lab 6](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab6.md)
+1. [Lab 6](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab6.md)
 
-1. [Lab 7](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab7.md)
+1. [Lab 7](https://github.com/mbeale0/Unity3D-CodeMash-Workhop/blob/master/labs/lab7.md)
 
-1. [Lab 8](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab8.md)
+1. [Lab 8](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab8.md)
 
 1. Break ~ 5 Minutes
 
-1. [Lab 9](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab9.md)
+1. [Lab 9](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab9.md)
 
-1. [Lab 10](https://github.com/mbeale0/Unity-Intro-Project/blob/master/labs/lab10.md)
+1. [Lab 10](https://github.com/mbeale0//Unity3D-CodeMash-Workhop/blob/master/labs/lab10.md)
 
 1. Wrap-up
 
